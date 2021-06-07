@@ -1,11 +1,8 @@
 from flask import Flask,render_template,request
 from werkzeug.utils import secure_filename
-app=Flask(__name__,template_folder='')
-@app.route('/')
-def form():
-    return render_template('/index.html')
+app=Flask(__name__)
 
-@app.route('/EmployeeSetting')
+@app.route('/')
 def employeeSetting():
     return render_template('/Main_File_Employee_Setting.html')
 
