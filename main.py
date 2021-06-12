@@ -12,6 +12,6 @@ def upload():
       f = request.files['fileToUpload']
       f.save(secure_filename(f.filename))
       return render_template('Main File.html')
-app.run(host='localhost', port=5000)
+
 
 
