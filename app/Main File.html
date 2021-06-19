@@ -76,9 +76,31 @@ body {
   .sidenav a {font-size: 18px;}
 }
 
+    #warning-message { display: none;
+    background-color: #cb98d9;}
+
+    @media only screen and (orientation:portrait){
+
+        #wrapper { display:none; }
+
+        #warning-message { display:block;}
+
+    }
+
+    @media only screen and (orientation:landscape){
+
+        #warning-message { display:none; }
+
+    }
 </style>
 </head>
 <body onload="noLogin(); themeLoader()">
+  <div id="warning-message">
+
+    <h1 align="center"> This website is only viewable in landscape mode. </h1>
+
+</div>
+<div id="wrapper">
 <div style="background-color: #ebe9dd; margin-top:-20px; margin-right:-7px"><br><br> <i><h1 style="margin-left:33%; color:#ff4f4f">  Explore your potential with Grasp Excellence! </h1></i>
   <h3 style="margin-left:240px; color:#0394fc">Upcoming Exam: Mathematics </h3><br></div>
 
@@ -131,6 +153,6 @@ for (i = 0; i < dropdown.length; i++) {
   });
 }
 </script>
-
+</div>
 </body>
 </html>
