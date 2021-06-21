@@ -178,11 +178,86 @@ img.hover-shadow {
 h3 {
   font-weight: normal;
 }
+#warning-message { display: none; margin: 5px; padding: 7px;}
+
+    @media only screen and (orientation:portrait){
+
+        #wrapper { display:none; }
+
+        #warning-message { display:block;}
+
+    }
+
+    @media only screen and (orientation:landscape){
+
+        #warning-message { display:none; }
+
+    }
 
 </style>
   </head>
   <body>
+    <div id="warning-message">
+      <div id="container">
 
+        <nav>
+
+          <ul>
+            <li><a href="New Trial for a New UI.html">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li class="dropdown" onmouseover="hover(this);" onmouseout="out(this);"><a href="#">S.P.'s &nbsp;<i class="fa fa-caret-down"></i></a>
+              <div class="dd">
+                <div id="up_arrow"></div>
+              <ul>
+
+                <li><a href="#">English</a></li>
+                <li><a href="#">Maths</a></li>
+                <li><a href="#">Science</a></li>
+                <li><a href="#">SST</a></li>
+                <li><a href="#">Hindi</a></li>
+                <li><a href="#">Moral Sc.</a></li>
+                <li><a href="#">Computers</a></li>
+
+              </ul>
+              </div>
+            </li>
+            <li><a href="#">Employees</a></li>
+            <li class="dropdown"><a href="#">Others &nbsp;<i class="fa fa-caret-down"></i> </a>
+             <div class="dd">
+               <div id="u_a_c"><div id="up_arrow"></div></div>
+              <ul>
+
+                <li><a href="#">Resources</a></li>
+                <li><a href="#">API</a></li>
+                <li><a href="#">PROJECTS</a></li>
+              </ul>
+              </div>
+          </ul>
+        </nav>
+      </div><br><br>
+      <div class="main" >
+        <div class="gg"><br><br>
+          <b><h1 align="center">Welcome to Grasp Excellence!</h1></b><br>
+          <p align="center"><img class="hover-shadow" src="./Discord server.png" style="height:70%; width:80%"></img></p>
+          <p align="center"><button class="join"><a href="https://discord.gg/YvP5W5Vuqu" target="_blank">JOIN</a></button></p>
+
+        <h1 align="center">Guidelines:</h2><br>
+        <p align="center">Over here you will recieve the best sample papers made by one of our own grade students. The sample papers will cover the CBSE style papers, tested and answered by the authors of the paper. There will be a bare minimum of one paper for all upcoming examinations other than Boards and Pre-Boards-2. </p><br>				<p align="center">To access these papers, you will need to navigate yourself to the subjects' tab under the Available Subjects Option. If you are looking for papers of the upcoming exam, click the link below. Hope you enjoy your time here!<br><br><i> Please be made aware that the papers will be uploaded one day before the exam and the answer keys may or may not be uploaded. For any questions regarding the questions please contact us for the answers. </i>
+               If you are willing to get your papers checked then please submit it to any one of the contact given under the section of Employees</p><br>
+                <p align="center"><a href="#">Latest Paper</a></p><br>
+
+      </div>
+      </div><br><br>
+
+
+            <script src = "./src/errors.js"></script>
+
+
+
+
+  </div>
+
+  <div id="wrapper">
 
     <div id="container">
 
@@ -239,7 +314,7 @@ h3 {
 		      <script src = "./src/errors.js"></script>
 
 
-
+</div>
 </body></html>
 
   </body>
