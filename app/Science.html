@@ -1,133 +1,450 @@
-<!DOCTYPE html>
 <html>
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
+ <head>
+   <title>Navigation Bar With Dropdown Menu</title>
+       <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="icon" href="MicrosoftTeams-image.png" type="image/x-icon">
-<title>Grasp Excellence</title>
 <style>
+* {
+  margin:0;
+  padding:0;
+}
 body {
-  font-family: "Lato", sans-serif;
+background-image: url('240d9cbc320bd2914661ebdd191d6ea9.png');
+background-repeat: no-repeat;
+}
+#ribbon {
+  position:fixed;
+  background-color:red;
+  color:white;
+  top:40px;
+  left:-30px;
+  width:160px;
+  transform:rotate(-45deg);
+  text-align:center;
+}
+#container {
+  position:relative;
+  width:100%;
+  background-color:black;
+  box-shadow: -2px -2px 5px white,2px -2px 5px white;
+}
+#container > nav {
+  width:100%;
+  display:flex;
+height:60px;
+}
+#logo {
+  line-height:60px;
+  font-size:30px;
+  padding: 0 50px;
+  color: white;
+  width:40%;
+  letter-spacing:2px;
+	font-family: "Brush Script MT", cursive; font-size: 32px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 26.4px;
+	margin-top: 1%;
+
+}
+#container > nav > ul {
+    margin: 0;
+    paddding: 0;
+    list-style-type: none;
+    display: flex;
+    position: absolute;
+    right: 50px;
+    /* min-width: 60%; */
+    z-index: 99;
+}
+#container > nav > ul > li {
+  line-height:60px;
+  margin: 0 0px;
+  padding:0;
+  text-align:center;
+  display:inline-block;
+
+/*   background-color:green; */
+  min-width:120px;
+
+}
+#container > nav > ul > li > a {
+  position:relative;
+/*   background-color:red; */
+  margin: 0 20px;
+    color:white;
+}
+#container > nav > ul > li:hover {
+  border-bottom: 2px solid white;
+  background-color: #0088ff;
+}
+#container > nav > ul > .dropdown:hover {
+  border-bottom:none;
+}
+#container > nav > ul > .dropdown:hover >  .dd
+{
+  display:block;
+}
+.dropdown:hover > a .fa-caret-down {
+  display:none;
+}
+a {
+  text-decoration:none;
+
 }
 
-/* Fixed sidenav, full height */
-.sidenav {
-  height: 100%;
-  width: 215px;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  background-color: #111;
-  overflow-x: hidden;
-  padding-top: 20px;
+#container > nav > ul > li > div {
+  position:absolute;
+  padding: 0 10px;
+
+  background-color:black;
+  display:none;
+  background-color:aliceblue;
+  min-width:100px;
 }
 
-/* Style the sidenav links and the dropdown button */
-.sidenav a, .dropdown-btn {
-  padding: 6px 8px 6px 16px;
-  text-decoration: none;
-  font-size: 20px;
-  color: #818181;
-  display: block;
-  border: none;
-  background: none;
-  width: 100%;
-  text-align: left;
-  cursor: pointer;
-  outline: none;
+#container > nav > ul > li > div > ul {
+  margin:0px 0 10px 0;
+  padding:0;
+  list-style:none;
 }
-
-/* On mouse-over */
-.sidenav a:hover, .dropdown-btn:hover {
-  color: #f1f1f1;
+#u_a_c {
+  position:relative;
+  width:100%;
+/*   background-color:red; */
 }
-
+#up_arrow {
+  position:relative;
+  width:20px;
+  height:20px;
+  left:42%;
+  top:-10px;
+  background-color:aliceblue;
+  transform:rotate(45deg);
+}
+#container > nav > ul > li> div > ul > li:hover {
+  background-color:rgba(0,0,0,0.2);
+}
+#container > nav > ul > li > div > ul > li > a {
+  padding : 5px;
+    color:black;
+}
 /* Main content */
 .main {
-  margin-left: 220px;
-  margin-right: 20px;/* Same as the width of the sidenav */
+	margin-top: 40px;
+margin-left:200px;
   font-size: 20px; /* Increased text to enable scrolling */
   padding: 0px 10px;
-}
+	margin-right: 200px;
+	background: rgba( 255, 255, 255, 0.55 );
+	box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+	backdrop-filter: blur( 15px );
+	-webkit-backdrop-filter: blur( 15px );
+	border-radius: 10px;
+	border: 1px solid rgba( 255, 255, 255, 0.18 );
 
-/* Add an active class to the active dropdown button */
-.active {
-  background-color: green;
+	padding-left: 20px;
+	padding-right: 20px;
+
+	padding-bottom: 50px;
+	margin-top: 40px;
+	margin-left: 100px;
+	margin-right: 100px;
+	width: relative;
+}
+.gg {
+	margin-top: 5px;
+	margin-left: 5px;
+	margin-right: 5px;
+	margin-bottom: 5px;
+}
+img.hover-shadow {
+      margin-bottom: 5%;
+  		transition: 0.3s;
+      border-radius: 10px;
+		}
+		.hover-shadow:hover {
+  		box-shadow: 0 50px 70px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+		}
+
+.join {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Helvetica Neue", Arial, sans-serif;
+  font-size: 20px;
   color: white;
+  font-weight: bolder;
+  width: 100px;
+  border-radius: 18px;
+  padding: 10px;
+  background-color: #5865F2;
+  margin-bottom: 10%;
 }
+h3 {
+  font-weight: normal;
+}
+#warning-message { display: none; margin: 5px; padding: 7px;}
 
-/* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
-.dropdown-container {
-  display: none;
-  background-color: #262626;
-  padding-left: 8px;
-}
+    @media only screen and (orientation:portrait){
 
-/* Optional: Style the caret down icon */
-.fa-caret-down {
-  float: right;
-  padding-right: 8px;
-}
+        #wrapper { display:none; }
 
-/* Some media queries for responsiveness */
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
-}
+        #warning-message { display:block;}
+
+    }
+
+    @media only screen and (orientation:landscape){
+
+        #warning-message { display:none; }
+
+    }
+    .haha {
+    	margin-top: 40px;
+    margin-left:5px;
+      font-size: 20px; /* Increased text to enable scrolling */
+      padding: 0px 10px;
+    	margin-right: 5px;
+    	background: rgba( 255, 255, 255, 0.55 );
+    	box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    	backdrop-filter: blur( 15px );
+    	-webkit-backdrop-filter: blur( 15px );
+    	border-radius: 10px;
+    	border: 1px solid rgba( 255, 255, 255, 0.18 );
+
+    	margin-top: 40px;
+    	margin-left: 5px;
+    	margin-right: 5px;
+    	width: relative;
+    }
+    #blah {
+      position:relative;
+      width:100%;
+      background-color:black;
+      box-shadow: -20px -5px 5px white,20px -5px 5px white;
+
+    }
+    #blah > nav {
+      width:100%;
+      display:flex;
+    height:60px;
+
+    }
+    #logo {
+      line-height:60px;
+      font-size:30px;
+      padding: 0 50px;
+      color: white;
+      width:40%;
+      letter-spacing:2px;
+    	font-family: "Brush Script MT", cursive; font-size: 32px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 26.4px;
+    	margin-top: 1%;
+
+    }
+    #blah > nav > ul {
+        margin: 0;
+        paddding: 0;
+        list-style-type: none;
+        display: flex;
+        position: absolute;
+        right: 50px;
+        /* min-width: 60%; */
+        z-index: 99;
+    }
+    #blah > nav > ul > li {
+      line-height:60px;
+      margin: 0 0px;
+      padding:0;
+      text-align:center;
+      display:inline-block;
+
+    /*   background-color:green; */
+      min-width:120px;
+
+    }
+    #blah > nav > ul > li > a {
+      position:relative;
+    /*   background-color:red; */
+      margin: 0 20px;
+        color:white;
+    }
+    #blah > nav > ul > li:hover {
+      border-bottom: 2px solid white;
+      background-color: #0088ff;
+    }
+    #blah > nav > ul > .dropdown:hover {
+      border-bottom:none;
+    }
+    #blah > nav > ul > .dropdown:hover >  .dd
+    {
+      display:block;
+    }
+    .dropdown:hover > a .fa-caret-down {
+      display:none;
+    }
+    a {
+      text-decoration:none;
+
+    }
+
+    #blah > nav > ul > li > div {
+      position:absolute;
+      padding: 0 10px;
+
+      background-color:black;
+      display:none;
+      background-color:aliceblue;
+      min-width:50px;
+    }
+
+    #blah > nav > ul > li > div > ul {
+      margin:0px 0 10px 0;
+      padding:0;
+      list-style:none;
+    }
+    #u_a_c {
+      position:relative;
+      width:100%;
+    /*   background-color:red; */
+    }
+    #up_arrow {
+      position:relative;
+      width:20px;
+      height:20px;
+      left:42%;
+      top:-10px;
+      background-color:aliceblue;
+      transform:rotate(45deg);
+    }
+    #blah > nav > ul > li> div > ul > li:hover {
+      background-color:rgba(0,0,0,0.2);
+    }
+    #blah > nav > ul > li > div > ul > li > a {
+      padding : 5px;
+        color:black;
+
+    }
+
 </style>
-</head>
-<body onload="noLogin(); themeLoader()">      <script src = "./src/errors.js"></script>
- <div style="background-color: #ebe9dd; margin-top:-20px; margin-right:-7px"><br><br> <i><h1 style="margin-left:33%; color:#ff4f4f">  Explore your potential with Grasp Excellence! </h1></i>
-   <h3 style="margin-left:240px; color:#0394fc">Upcoming Exam: Social Science </h3><br></div>
+  </head>
+  <body onload="noLogin(); themeLoader()">
+    <div id="warning-message">
+      <div id="blah">
 
-<div class="sidenav" >
-<p align="center">  <img src="MicrosoftTeams-image.png" width="160px" style="border-radius:5px;  border:3px solid #eeeeee; padding:3px; border-radius:9px"></p>
-<br><br>
-<div style="margin-left: 6px">
-  <a href="./Main File.html">Home</a>
-  <a href="./Employees.html">Employees</a>
-  <a href="./Permits.html">Permits</a>
-  <a href="./Advanced Materials.html">Study Material</a>
-  <button class="dropdown-btn">Sample Papers 
-  </button>
-  <div class="dropdown-container">
-    <a href="Blank.html">Hindi</a>
-    <a href="./English.html">English</a>
-    <a href="Science.html">Science</a>
-    <a href="Maths.html">Maths</a>
-    <a href="Blank.html">SST</a>
-    <a href="Blank.html">Computers</a>
-    <a href="Blank.html">Moral Science</a>  </div>
+        <nav>
+
+          <ul>
+            <li><a href="New Trial for a New UI.html">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li class="dropdown" onmouseover="hover(this);" onmouseout="out(this);"><a href="#">S.P.'s &nbsp;<i class="fa fa-caret-down"></i></a>
+              <div class="dd">
+                <div id="up_arrow"></div>
+              <ul>
+
+                <li><a href="English.html">English</a></li>
+                <li><a href="Maths.html">Maths</a></li>
+                <li><a href="Science.html">Science</a></li>
+                <li><a href="SST.html">SST</a></li>
+                <li><a href="Hindi.html">Hindi</a></li>
+                <li><a href="Msc.html">Moral Sc.</a></li>
+                <li><a href="Computers.html">Computers</a></li>
+
+              </ul>
+              </div>
+            </li>
+            <li><a href="#">Employees</a></li>
+            <li class="dropdown"><a href="#">Others &nbsp;<i class="fa fa-caret-down"></i> </a>
+             <div class="dd">
+               <div id="u_a_c"><div id="up_arrow"></div></div>
+              <ul>
+
+                <li><a href="Advanced Material.html">Resources</a></li>
+                <li><a href="Member.html">Members</a></li>
+                <li><a href="Vacancy.html">Vacancies</a></li>
+              </ul>
+              </div>
+          </ul>
+        </nav>
+      </div><br><br>
+      <div class="haha" >
+        <div class="gg"><br><br>
+          <b><h1 align="center">Science Sample Papers:</h1></b><br>
+         <p align="center"><img class="hover-shadow" src="./Screenshot 2021-06-22 150452.png" style="height:50%; width:100%"></img></p>
+
+        <h1 align="center">Guidelines:</h2><br>
+        <p align="center">Please find attachments to the Science Sample Papers (Objectives and Subjectives)</p><br>
+        -><a href="https://forms.office.com/pages/responsepage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAANAARkRo9xURDNNVURUNkhVSUJFTk9aUU1aVDNQUEtFMi4u"> Science PT2 Set 1 (Objectives) </a><br>
+        -><a href="PT2_SCI_SUB_SET1.docx"> Science PT2 Set 1 (Subjectives) </a><br>
+        -><a href="https://forms.office.com/r/3rSUwwU07m"> Science PT2 Set 2 (Objectives) </a><br>
+
+        -><a href="PT2_SCI_SUB_SET2.docx"> Science PT2 Set 2 (Subjectives) </a><br>
+      </div>
+      </div><br><br>
+
+
+            <script src = "./src/errors.js"></script>
+
+
+
+
   </div>
 
+  <div id="wrapper">
+
+    <div id="container">
+
+      <nav>
+        <div id="logo">Grasp Excellence</div>
+        <ul>
+          <li><a href="New Trial for a New UI.html">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li class="dropdown" onmouseover="hover(this);" onmouseout="out(this);"><a href="#">S.P.'s &nbsp;<i class="fa fa-caret-down"></i></a>
+            <div class="dd">
+              <div id="up_arrow"></div>
+            <ul>
+
+              <li><a href="#">English</a></li>
+              <li><a href="#">Maths</a></li>
+              <li><a href="#">Science</a></li>
+							<li><a href="#">SST</a></li>
+							<li><a href="#">Hindi</a></li>
+							<li><a href="#">Moral Sc.</a></li>
+							<li><a href="#">Computers</a></li>
+
+            </ul>
+            </div>
+          </li>
+          <li><a href="#">Employees</a></li>
+          <li class="dropdown"><a href="#">Others &nbsp;<i class="fa fa-caret-down"></i> </a>
+           <div class="dd">
+             <div id="u_a_c"><div id="up_arrow"></div></div>
+            <ul>
+
+              <li><a href="#">Resources</a></li>
+              <li><a href="#">API</a></li>
+              <li><a href="#">PROJECTS</a></li>
+            </ul>
+            </div>
+        </ul>
+      </nav>
+    </div><br><br>
+		<div class="main" >
+			<div class="gg"><br><br>
+        <b><h1 align="center">Science Sample Papers:</h1></b><br>
+                 <p align="center"><iframe style="border-radius:20px;" width="90%" height="70%"src="https://forms.office.com/pages/responsepage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAANAARkRo9xURDNNVURUNkhVSUJFTk9aUU1aVDNQUEtFMi4u" name="page"></iframe>
+</p>
+
+    <br>  <h1 align="center">Guidelines:</h2><br>
+      <p align="center">Please find attachments to the Science Sample Papers (Objectives and Subjectives)</p><br>
+    <p align="center" style="font-size:25px">  -><a href="https://forms.office.com/pages/responsepage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAANAARkRo9xURDNNVURUNkhVSUJFTk9aUU1aVDNQUEtFMi4u"> Science PT2 Set 1 (Objectives) </a><br>
+      -><a href="https://onedrive.live.com/edit.aspx?resid=8CF17B042BA6F274!1535&ithint=file%2cdocx&wdOrigin=OFFICECOM-WEB.START.MRU" target="page"> Science PT2 Set 1 (Subjectives) </a><br>
+      -><a href="https://forms.office.com/r/3rSUwwU07m" target="page"> Science PT2 Set 2 (Objectives) </a><br>
+
+      -><a href="PT2_SCI_SUB_SET2.docx"> Science PT2 Set 2 (Subjectives) </a><br></p>
+		</div>
+  </div><br><br>
+
+
+		      <script src = "./src/errors.js"></script>
+
+
 </div>
+</body></html>
 
-<div class="main" >
-  <h2>Science Papers:</h2>
-  <p>Click on the links to open the documents.</p>
--><a href="https://forms.office.com/pages/responsepage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAANAARkRo9xURDNNVURUNkhVSUJFTk9aUU1aVDNQUEtFMi4u"> Science PT2 Set 1 (Objectives) </a><br>
--><a href="PT2_SCI_SUB_SET1.docx"> Science PT2 Set 1 (Subjectives) </a><br>
--><a href="https://forms.office.com/r/3rSUwwU07m"> Science PT2 Set 2 (Objectives) </a><br>
-
--><a href="PT2_SCI_SUB_SET2.docx"> Science PT2 Set 2 (Subjectives) </a><br>
-<script>
-/* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
-var dropdown = document.getElementsByClassName("dropdown-btn");
-var i;
-
-for (i = 0; i < dropdown.length; i++) {
-  dropdown[i].addEventListener("click", function() {
-  this.classList.toggle("active");
-  var dropdownContent = this.nextElementSibling;
-  if (dropdownContent.style.display === "block") {
-  dropdownContent.style.display = "none";
-  } else {
-  dropdownContent.style.display = "block";
-  }
-  });
-}
-</script>
-
-</body>
+  </body>
 </html>
