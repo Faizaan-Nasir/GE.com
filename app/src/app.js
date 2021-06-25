@@ -95,8 +95,8 @@ function check() {
   } else if (a == "Harsha" && b == "s12915") {
     localStorage.name = a;
     window.location.href = "New Trial for a New UI.html";
-  }else if (a == "Random" && b == "People") {
+  } else if (a == "Random" && b == "People") {
     localStorage.name = a;
     window.location.href = "New Trial for a New UI.html";
-} else alert("Invalid Login ID and Password");
+  } else alert("Invalid Login ID and Password");
 }
