@@ -98,5 +98,5 @@ function check() {
   }else if (a == "Random" && b == "People") {
     localStorage.name = a;
     window.location.href = "New Trial for a New UI.html";
-}else alert("Invalid Login ID and Password");
+} else alert("Invalid Login ID and Password");
 }
