@@ -74,7 +74,7 @@ function check() {
   } else if (a == "Sabhya" && b == "s8340") {
     localStorage.name = a;
     window.location.href = "New Trial for a New UI.html";
-  } else if (a == "Sathya" && b == "s14234") {
+  } else if (a == "Sath-Hya" && b == "GEFounderS14234") {
     localStorage.name = a;
     window.location.href = "New Trial for a New UI.html";
   } else if (a == "Satvik" && b == "s8973") {
