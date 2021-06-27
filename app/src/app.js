@@ -80,7 +80,7 @@ function check() {
   } else if (a == "Satvik" && b == "s8973") {
     localStorage.name = a;
     window.location.href = "New Trial for a New UI.html";
-  } else if (a == "Shashwat" && b == "s16199") {
+  } else if (a == "amazinglySK" && b == "anonymousGuiseppe2302") {
     localStorage.name = a;
     window.location.href = "New Trial for a New UI.html";
   } else if (a == "Shiv" && b == "s15888") {
