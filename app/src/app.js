@@ -23,10 +23,10 @@ function check() {
   } else if (a == "Aneesh" && b == "s8376") {
     localStorage.name = a;
     window.location.href = "New Trial for a New UI.html";
-  } else if (a == "Arnav" && b == "s8395") {
+  } else if (a == "S8395" && b == "22arnav2005") {
     localStorage.name = a;
     window.location.href = "New Trial for a New UI.html";
-  } else if (a == "Atharv" && b == "s8388") {
+  } else if (a == "Atharv" && b == "athu2006") {
     localStorage.name = a;
     window.location.href = "New Trial for a New UI.html";
   } else if (a == "Ayush" && b == "s8670") {
