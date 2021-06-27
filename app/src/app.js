@@ -14,7 +14,7 @@ function check() {
   } else if (a == "Adwaith" && b == "s10832") {
     localStorage.name = a;
     window.location.href = "New Trial for a New UI.html";
-  } else if (a == "Ashar" && b == "s13490") {
+  } else if (a == "Ashar" && b == "okpass@21") {
     localStorage.name = a;
     window.location.href = "New Trial for a New UI.html";
   } else if (a == "Ashaz" && b == "s16166") {
