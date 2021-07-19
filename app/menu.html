@@ -5,8 +5,8 @@
 
 
 .card{
-  width: 90%;
-  height: 90%;
+  width: 100%;
+  height: 100%;
   background-color: #1E2B32;
   border-radius: 10px 10px;
 }
@@ -24,7 +24,7 @@ h1{
 }
 
 .iconM{
-  font-size: 18px;
+  font-size: 32px;
   margin-left: 170px;
   color: #2f89fc;
 }
@@ -36,7 +36,7 @@ h1{
 .body li{
   transition: 1s all;
   font-family: 'Roboto', sans-serif;
-  font-size: 18px;
+  font-size: 32px;
   padding: 15px;
   margin-left: -40px;
   margin-top: 0px;
@@ -62,12 +62,13 @@ li:hover{
 
 .body li ul{
   background: #1E2B32;
-  margin-left: 280px;
-  margin-top: -38px;
+
+  margin-top: -60px;
   display: none;
   position: absolute;
   border-top-right-radius: 15px 15px;
   border-bottom-right-radius: 15px 15px;
+  width: 90%;
 }
 
 .body li:hover > ul{
@@ -77,27 +78,34 @@ li:hover{
 </style>
 </head>
 <body>
+  <p align="center">
 <div class="container">
   <div class="card">
     <div class="header">
-      <h1 align="center">Main Menu Grasp Excellence</i></h1>
+      <h1 align="center" style="font-size:40px;">Main Menu Grasp Excellence</i></h1>
     </div>
     <div class="body">
       <ul>
-        <li><i class="fas fa-home icon"></i> Home</li>
+        <h2 align="center"><li><i class="fas fa-home icon"></i> Home</li>
         <li><i class="fas fa-underline icon"></i> Tipography</li>
         <li><i class="fas fa-boxes icon"></i> Widgets</li>
         <li><i class="fas fa-table icon"></i> Tables</li>
         <li><i class="fab fa-wpforms icon"></i> Forms
           <ul>
-            <li><i class="fas fa-pencil-alt icon"></i> First form</li>
-            <li><i class="fas fa-paper-plane icon"></i> Second form</li>
+            <br>
+          <a href="Hindi.html">  <li><i class="fas fa-pencil-alt icon"></i> Hindi</li></a>
+          <a href="English.html">  <li><i class="fas fa-paper-plane icon"></i> English</li></a>
+          <a href="SST.html">  <li><i class="fas fa-pencil-alt icon"></i> SST</li></a>
+          <a href="Science.html">  <li><i class="fas fa-paper-plane icon"></i> Science</li></a>
+          <a href="Maths.html">  <li><i class="fas fa-pencil-alt icon"></i> Maths</li></a>
           </ul>
         </li>
         <li><i class="fas fa-chart-pie icon"></i> Charts</li>
-      </ul>
+      </ul></h2>
     </div>
   </div>
+
 </div>
+</p>
 </body>
 </html>
