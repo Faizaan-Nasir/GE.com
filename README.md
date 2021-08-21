@@ -19,6 +19,7 @@ To help students who need help in their scholastic career and offer them a vivid
 - Please come up with sensible and proper *id*s and _class_ names for the elements
 - Any documents (.docx, .pptx, .txt) which are required goes in app/docs/
 - Any images required in the website goes to app/assets/
+- css files can be linked using /css/(name of the file). All css files goes into app/css/.
 - Main pages like contact, home etc. goes directly to app/ and not within any particular sub-folder
 - Subject-wise pages goes in app/subjects/ folder.
 - While adding anchor tag i.e. linking different pages within our website consider the following points:
