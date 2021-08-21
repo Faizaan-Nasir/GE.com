@@ -4,15 +4,15 @@
        <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
    <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="icon" href="MicrosoftTeams-image.png" type="image/x-icon">
+<link rel="icon" href="/assets/logo.png" type="image/x-icon">
 <style>
 * {
   margin:0;
   padding:0;
 }
 body {
-background-image: url('240d9cbc320bd2914661ebdd191d6ea9.png');
-background-repeat: no-repeat;
+  background-image: url('/assets/bg.png');
+  background-repeat: no-repeat;
 }
 #ribbon {
   position:fixed;
@@ -48,7 +48,7 @@ height:60px;
 }
 #container > nav > ul {
     margin: 0;
-    paddding: 0;
+    padding: 0;
     list-style-type: none;
     display: flex;
     position: absolute;
@@ -239,7 +239,7 @@ h3 {
     }
     #blah > nav > ul {
         margin: 0;
-        paddding: 0;
+        padding: 0;
         list-style-type: none;
         display: flex;
         position: absolute;
@@ -322,14 +322,14 @@ h3 {
 
 </style>
   </head>
-  <body onload="noLogin(); themeLoader()">
+  <body onload="noLogin(); ">
     <div id="warning-message">
       <div id="blah">
 
         <nav>
 
           <ul>
-            <li><a href="New Trial for a New UI.html">Home</a></li>
+            <li><a href="/home">Home</a></li>
             <li><a href="#">About</a></li>
             <li class="dropdown" onmouseover="hover(this);" onmouseout="out(this);"><a href="#">S.P.'s &nbsp;<i class="fa fa-caret-down"></i></a>
               <div class="dd">
@@ -341,8 +341,8 @@ h3 {
                 <li><a href="Science.html">Science</a></li>
                 <li><a href="SST.html">SST</a></li>
                 <li><a href="Hindi.html">Hindi</a></li>
-                <li><a href="Msc.html">Moral Sc.</a></li>
-                <li><a href="Computers.html">Computers</a></li>
+                <li><a href="/subjects/msc">Moral Sc.</a></li>
+                <li><a href="/subjects/computers">Computers</a></li>
 
               </ul>
               </div>
@@ -354,8 +354,8 @@ h3 {
               <ul>
 
                 <li><a href="Advanced Material.html">Resources</a></li>
-                <li><a href="Member.html">Members</a></li>
-                <li><a href="Vaccancy.html">Vacancies</a></li>
+                <li><a href="/member">Members</a></li>
+                <li><a href="/vacancy">Vacancies</a></li>
               </ul>
               </div>
           </ul>
@@ -364,7 +364,7 @@ h3 {
       <div class="haha" >
         <div class="gg"><br><br>
           <b><h1 align="center">Welcome to Grasp Excellence!</h1></b><br>
-          <p align="center"><img class="hover-shadow" src="./Discord server.png" style="height:20%; width:100%"></img></p>
+          <p align="center"><img class="hover-shadow" src="/assets/Discord server.png" style="height:20%; width:100%"></img></p>
           <p align="center"><button class="join"><a href="https://discord.gg/YvP5W5Vuqu" target="_blank">JOIN</a></button></p>
 
         <h1 align="center">Guidelines:</h2><br>
@@ -376,7 +376,7 @@ h3 {
       </div><br><br>
 
 
-            <script src = "./src/errors.js"></script>
+            <script src = "/js/errors.js"></script>
 
 
 
@@ -390,33 +390,36 @@ h3 {
       <nav>
         <div id="logo">Grasp Excellence</div>
         <ul>
-          <li><a href="New Trial for a New UI.html">Home</a></li>
-          <li><a href="Syllabus.html">Syllabus</a></li>
+          <li><a href="/home">Home</a></li>
+          <li><a href="/syllabus">Syllabus</a></li>
           <li class="dropdown" onmouseover="hover(this);" onmouseout="out(this);"><a href="#">S.P.'s &nbsp;<i class="fa fa-caret-down"></i></a>
             <div class="dd">
               <div id="up_arrow"></div>
             <ul>
 
-              <li><a href="English.html">English</a></li>
-              <li><a href="Maths.html">Maths</a></li>
-              <li><a href="Science.html">Science</a></li>
-              <li><a href="SST.html">SST</a></li>
-              <li><a href="Hindi.html">Hindi</a></li>
-              <li><a href="Msc.html">Moral Sc.</a></li>
-              <li><a href="Computers.html">Computers</a></li>
-
+              <li><a href="/subjects/english">English</a></li>
+              <li><a href="/subjects/maths">Maths</a></li>
+              <li><a href="/subjects/science">Science</a></li>
+              <li><a href="/subjects/SST">SST</a></li>
+              <li><a href="/subjects/hindi">Hindi</a></li>
+              <!-- Not yet created -->
+              <li><a href="/subjects/msc">Moral Sc.</a></li>
+              <li><a href="/subjects/computers">Computers</a></li>
+              <!-- Not yet created -->
             </ul>
             </div>
           </li>
-          <li><a href="Employees.html">Employees</a></li>
+          <li><a href="/contact">Employees</a></li>
           <li class="dropdown"><a href="#">Others &nbsp;<i class="fa fa-caret-down"></i> </a>
            <div class="dd">
              <div id="u_a_c"><div id="up_arrow"></div></div>
             <ul>
 
-              <li><a href="Advanced Materials.html">Resources</a></li>
-              <li><a href="Member.html">Members</a></li>
-              <li><a href="Vaccancy.html">Vacancies</a></li>
+              <li><a href="/resources">Resources</a></li>
+              <li><a href="/member">Members</a></li>
+              <!-- Not yet created -->
+              <li><a href="/vacancy">Vacancies</a></li>
+              <!-- Not yet created -->
             </ul>
             </div>
         </ul>
@@ -430,16 +433,11 @@ h3 {
 		  <h1 align="center">Members:</h1><br>
 		  <p align="center">Grasp Excellence has it's own members only section, the members get to access an extra high order type papers. They have access to a dedicated website where they also get extra resources like detailed notes of difficult chapters.</p><br>
 <p align="center">Some of you might question,, how do you get access to members only section? Well all you do is solve our papers. If your participation is quite frequent, we will promote you to the members only website.</p>
-<br><p align="center">If you already are a member and are looking forward to open the website, click this <a href="https://grasp-excellence-members.github.io/Members-Main-Page/Revamped%20Login%20Page.html">link</a>
+<br><p align="center">If you already are a member and are looking forward to open the website, click this <a href="#">link</a>
 		</div>
   </div><br><br>
-
-
-		      <script src = "./src/errors.js"></script>
-
-
 </div>
-</body></html>
+<script src="/js/errors.js"></script>
 
-  </body>
+</body>
 </html>
