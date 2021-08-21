@@ -1,5 +1,7 @@
 # Grasp Excellence
 
+Link to the app : https://grasp-excellence.netlify.app/login
+
 ## Who are we?
 
 A small group of students fuelled by the passion for teaching.
@@ -27,5 +29,23 @@ To help students who need help in their scholastic career and offer them a vivid
   - If its a main page then you may directly link by setting the attribute href to / followed by the name of the file without the .html extension
   - Anything within the docs folder can be linked by /docs/ followed by the full name of the file (including the extension). The same rule applies to images used within the websites (/assets/(the name of the image with the extension))
   - When referring to subject-wise html pages, set the href to /subjects/ followed by just the subject name all lower case (except SST). The subject names can also be referred from the html docs in subjects folder.
+
+## Setup for Testing
+
+Assuming you have [node.js](https://nodejs.org/en/) installed, follow the following steps.
+
+- Create a new file called .env in the main folder.
+- Paste this code in the .env file : `PORT = 3000`
+- Open the command line in the main working directory
+- First run the commmand `npm i`. This will install all the required dependencies for the app.
+- Run the command `node server.js`. This will spin up a server for your perusal.
+- Visit http://localhost:3000 to view the app.
+- Not the links for html docs in the main directory is the above link followed by /(name without the extension). For the files in subjects directory, its the above link followed by /subjects/(name without the extension).
+- Everytime you make a change to the html markup refresh the tab and you're good to go.
+
+## Few things to note
+
+- Please try not to edit anything in the server.js file or the .gitignore file.
+- Try following the same folder structure.
 
 If at all there are any discrepancies, then please contact @amazinglySK .
