@@ -319,7 +319,26 @@ h3 {
         color:black;
 
     }
-
+.grid-item-1 {
+  text-align: center;
+  border-radius: 8px;
+  width: 30%;
+  background-color: #353535;
+  color: white;
+  margin: 0 auto;
+  padding: 1em;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  font-size: 16px;
+}
+.grid-item-1:hover{
+  width: 35%;
+  transition-duration: 0.5s;
+}
+a{
+  color: white;
+  text-decoration: none;
+}
 </style>
   </head>
   <body onload="noLogin()">
@@ -401,10 +420,10 @@ h3 {
     <br>  <h1 align="center">Guidelines:</h2><br>
       <p align="center">Please find attachments to the Science Sample Papers (Objectives and Subjectives)<br>Your objectives will appear in the box below.</p><br>
     <p align="center" class="papers" style="font-size:25px">  -><a href="https://forms.office.com/pages/responsepage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAANAARkRo9xURDNNVURUNkhVSUJFTk9aUU1aVDNQUEtFMi4u" target="page"> Science PT2 Set 1 (Objectives) </a><br>
-      -><a href="/docs/PT2_SCI_SUB_SET1.docx" > Science PT2 Set 1 (Subjectives) </a><br>
-      -><a href="https://forms.office.com/r/3rSUwwU07m" target="page"> Science PT2 Set 2 (Objectives) </a><br>
+      <div class="grid-item-1"><a href="/docs/PT2_SCI_SUB_SET1.docx" > Science PT2 Set 1 (Subjectives) </a></div><br>
+        <div class="grid-item-1"><a href="https://forms.office.com/r/3rSUwwU07m" target="page"> Science PT2 Set 2 (Objectives) </a></div><br>
 
-      -><a href="/docs/PT2_SCI_SUB_SET2.docx"> Science PT2 Set 2 (Subjectives) </a><br></p>
+          <div class="grid-item-1"><a href="/docs/PT2_SCI_SUB_SET2.docx"> Science PT2 Set 2 (Subjectives) </a></div><br></p>
       <br><br>
                <p align="center"><iframe style="border-radius:10px; background-color:black;" width="90%" height="600px" name="page"></iframe>
 </p>
