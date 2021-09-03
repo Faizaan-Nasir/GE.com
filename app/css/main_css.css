@@ -325,7 +325,7 @@ html { overflow-x: hidden; }
 .grid-item-1 {
   text-align: center;
   border-radius: 8px;
-  width: 50%;
+  width: 30%;
   background-color: #353535;
   color: white;
   margin: 0 auto;
@@ -334,7 +334,7 @@ html { overflow-x: hidden; }
   grid-column-end: 2;
 }
 .grid-item-1:hover{
-  width: 55%;
+  width: 35%;
   transition-duration: 0.5s;
 }
 a{
