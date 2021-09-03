@@ -338,5 +338,6 @@ html { overflow-x: hidden; }
   transition-duration: 0.5s;
 }
 a{
-  color: none;
+  color: white;
+  text-decoration: none;
 }
