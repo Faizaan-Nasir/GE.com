@@ -322,3 +322,18 @@ h3 {
   font-size: 16px;
 }
 html { overflow-x: hidden; }
+.grid-item-1 {
+  text-align: center;
+  border-radius: 8px;
+  width: 70%;
+  background-color: #353535;
+  color: white;
+  margin: 0 auto;
+  padding: 1em;
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+.grid-item-1:hover{
+  width: 75%;
+  transition-duration: 0.5s;
+}
