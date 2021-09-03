@@ -332,6 +332,7 @@ html { overflow-x: hidden; }
   padding: 1em;
   grid-column-start: 1;
   grid-column-end: 2;
+  font-size: 12px;
 }
 .grid-item-1:hover{
   width: 35%;
