@@ -98,5 +98,12 @@ function check() {
   } else if (a == "Random" && b == "People") {
     localStorage.name = a;
     window.location.href = "./home.html";
-  } else alert("Invalid Login ID and Password");
+  } 
+  else if (a == "Harish" && b == "s15771") {
+    localStorage.name = a;
+    window.location.href = "./home.html";}
+    else if (a == "Ruqaiya" && b == "s8491") {
+      localStorage.name = a;
+      window.location.href = "./home.html";}
+    else alert("Invalid Login ID and Password");
 }
