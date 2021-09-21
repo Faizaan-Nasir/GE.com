@@ -108,5 +108,17 @@ function check() {
   else if (a == "Anusha" && b == "s14246") {
     localStorage.name = a;
     window.location.href = "./home.html";}
+  else if (a == "Sanmeet" && b == "s10128") {
+    localStorage.name = a;
+    window.location.href = "./home.html";}
+  else if (a == "Hisham" && b == "s16628") {
+    localStorage.name = a;
+    window.location.href = "./home.html";}
+  else if (a == "Mohammed Almeer" && b == "s15928") {
+    localStorage.name = a;
+    window.location.href = "./home.html";}
+  else if (a == "Parva" && b == "s8419") {
+    localStorage.name = a;
+    window.location.href = "./home.html";}
     else alert("Invalid Login ID and Password");
 }
