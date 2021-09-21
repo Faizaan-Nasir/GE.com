@@ -123,5 +123,15 @@ function check() {
   else if (a == "Mohamed Shaheem" && b == "s11317") {
       localStorage.name = a;
       window.location.href = "./home.html";}
+  else if (a == "Sujal" && b == "s9395") {
+      localStorage.name = a;
+      window.location.href = "./home.html";}
+  else if (a == "Arnav Philip" && b == "s14938") {
+      localStorage.name = a;
+      window.location.href = "./home.html";}
+  else if (a == "Mohammed Abbas" && b == "s14963") {
+      localStorage.name = a;
+      window.location.href = "./home.html";}
+  
     else alert("Invalid Login ID and Password");
 }
