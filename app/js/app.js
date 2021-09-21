@@ -102,8 +102,11 @@ function check() {
   else if (a == "Harish" && b == "s15771") {
     localStorage.name = a;
     window.location.href = "./home.html";}
-    else if (a == "Ruqaiya" && b == "s8491") {
-      localStorage.name = a;
-      window.location.href = "./home.html";}
+  else if (a == "Ruqaiya" && b == "s8491") {
+    localStorage.name = a;
+    window.location.href = "./home.html";}
+  else if (a == "Anusha" && b == "s14246") {
+    localStorage.name = a;
+    window.location.href = "./home.html";}
     else alert("Invalid Login ID and Password");
 }
