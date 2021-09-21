@@ -132,7 +132,7 @@ function check() {
   else if (a == "Mohammed Abbas" && b == "s14963") {
       localStorage.name = a;
       window.location.href = "./home.html";}
-  else if (a == Thanveer" && b == "s14949") {
+  else if (a == Thanveer && b == "s14949") {
       localStorage.name = a;
       window.location.href = "./home.html";}
     else alert("Invalid Login ID and Password");
