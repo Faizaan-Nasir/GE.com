@@ -98,51 +98,66 @@ function check() {
   } else if (a == "Random" && b == "People") {
     localStorage.name = a;
     window.location.href = "./home.html";
-  } 
+  }
   else if (a == "Harish" && b == "s15771") {
     localStorage.name = a;
-    window.location.href = "./home.html";}
+    window.location.href = "./home.html";
+  }
   else if (a == "Ruqaiya" && b == "s8491") {
     localStorage.name = a;
-    window.location.href = "./home.html";}
+    window.location.href = "./home.html";
+  }
   else if (a == "Anusha" && b == "s14246") {
     localStorage.name = a;
-    window.location.href = "./home.html";}
+    window.location.href = "./home.html";
+  }
   else if (a == "Sanmeet" && b == "s10128") {
     localStorage.name = a;
-    window.location.href = "./home.html";}
+    window.location.href = "./home.html";
+  }
   else if (a == "Hisham" && b == "s16628") {
     localStorage.name = a;
-    window.location.href = "./home.html";}
+    window.location.href = "./home.html";
+  }
   else if (a == "Mohammed Almeer" && b == "s15928") {
     localStorage.name = a;
-    window.location.href = "./home.html";}
+    window.location.href = "./home.html";
+  }
   else if (a == "Parva" && b == "s8419") {
     localStorage.name = a;
-    window.location.href = "./home.html";}
+    window.location.href = "./home.html";
+  }
   else if (a == "Mohamed Shaheem" && b == "s11317") {
-      localStorage.name = a;
-      window.location.href = "./home.html";}
+    localStorage.name = a;
+    window.location.href = "./home.html";
+  }
   else if (a == "Sujal" && b == "s9395") {
-      localStorage.name = a;
-      window.location.href = "./home.html";}
+    localStorage.name = a;
+    window.location.href = "./home.html";
+  }
   else if (a == "Arnav Philip" && b == "s14938") {
-      localStorage.name = a;
-      window.location.href = "./home.html";}
+    localStorage.name = a;
+    window.location.href = "./home.html";
+  }
   else if (a == "Mohammed Abbas" && b == "s14963") {
-      localStorage.name = a;
-      window.location.href = "./home.html";}
+    localStorage.name = a;
+    window.location.href = "./home.html";
+  }
   else if (a == "Thanveer" && b == "s14949") {
-      localStorage.name = a;
-      window.location.href = "./home.html";}
-      else if (a == "Vishal" && b == "s10693") {
-        localStorage.name = a;
-        window.location.href = "./home.html";}
-        else if (a == "Safee" && b == "s14871") {
-          localStorage.name = a;
-          window.location.href = "./home.html";}
-          else if (a == "Sanjeevi" && b == "s14913") {
-            localStorage.name = a;
-            window.location.href = "./home.html";}
-    else alert("Invalid Login ID and Password");
+    localStorage.name = a;
+    window.location.href = "./home.html";
+  }
+  else if (a == "Vishal" && b == "s10693") {
+    localStorage.name = a;
+    window.location.href = "./home.html";
+  }
+  else if (a == "Safee" && b == "s14871") {
+    localStorage.name = a;
+    window.location.href = "./home.html";
+  }
+  else if (a == "Sanjeevi" && b == "s14913") {
+    localStorage.name = a;
+    window.location.href = "./home.html";
+  }
+  else alert("Invalid Login ID and Password");
 }
