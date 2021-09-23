@@ -1,67 +1,50 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Login Page</title>
-    <link
-      rel="icon"
-      href="./assets/favicon for website.png"
-      type="image/x-icon"
-    />
-    <link
-      rel="icon"
-      href="./assets/favicon for website.png"
-      type="image/x-icon"
-    />
 
-    <link rel="stylesheet" href="./css/login.css" />
-  </head>
-  <script>
-    function disableClick() {
-      document.onclick = function (event) {
-        if (event.button == 2) {
-          alert("Right Click Message");
-          return false;
-        }
-      };
-    }
-  </script>
-  <body onload="disableClick"></body>
-  <body>
-    <div class="main-wrap">
-      <div class="container">
-        <img src="./assets/login_pic.png" />
-      </div>
-      <div align="center">
-        <h1 align="center" class="text-center header">Verification Form</h1>
-        <input type="text" placeholder="Enter your name " id="inputId" />
-        <br />
-        <input
-          type="password"
-          placeholder="Enter your password "
-          id="password"
-        />
-        <br /><span class="notice"
-          >If you have forgotten your password, please contact Faizaan, Shashwat
-          or Tanmeen</span
-        >
-        <br /><br /><br /><br />
-        <button
-          type="button"
-          onclick="check()"
-          class="btn mb-2 mb-md-0 btn-primary btn-block"
-        >
-          Submit
-        </button>
-        <br />
-        <a
-          href="https://grasp-excellence-members-kappa.vercel.app/Home%20Page.html"
-        >
-          <button class="btn mb-2 mb-md-0 btn-primary btn-block">
-            Members Login
-          </button></a
-        >
-      </div>
+<head>
+  <title>Login Page</title>
+  <link rel="icon" href="./assets/favicon for website.png" type="image/x-icon" />
+  <link rel="icon" href="./assets/favicon for website.png" type="image/x-icon" />
+
+  <link rel="stylesheet" href="./css/login.css" />
+</head>
+<script>
+  function disableClick() {
+    document.onclick = function (event) {
+      if (event.button == 2) {
+        alert("Right Click Message");
+        return false;
+      }
+    };
+  }
+</script>
+
+<body onload="disableClick"></body>
+
+<body>
+  <div class="main-wrap">
+    <div class="container">
+      <img src="./assets/login_pic.png" />
     </div>
-    <script src="./js/app.js"></script>
-  </body>
+    <div align="center">
+      <h1 align="center" class="text-center header">Verification Form</h1>
+      <input type="text" placeholder="Enter your name " id="inputId" />
+      <br />
+      <input type="password" placeholder="Enter your password " id="password" />
+      <br /><span class="notice">If you have forgotten your password, please contact Faizaan, Shashwat
+        or Tanmeen</span>
+      <br /><br /><br /><br />
+      <button type="button" onclick="check()" class="btn mb-2 mb-md-0 btn-primary btn-block">
+        Submit
+      </button>
+      <br />
+      <a href="https://grasp-excellence-members-kappa.vercel.app/Home%20Page.html">
+        <button class="btn mb-2 mb-md-0 btn-primary btn-block">
+          Members Login
+        </button></a>
+    </div>
+  </div>
+  <script src="./js/app.js"></script>
+</body>
+
 </html>

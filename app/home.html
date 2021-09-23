@@ -1,356 +1,436 @@
 <html>
- <head>
-   <title>Grasp Excellence</title>
-       <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
-   <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="icon" href="./assets/logo.png" type="image/x-icon">
-<style>
-* {
-  margin:0;
-  padding:0;
-}
-body {
-  background-color: #dedede;
-background-repeat: no-repeat;
-}
-#ribbon {
-  position:fixed;
-  background-color:red;
-  color:white;
-  top:40px;
-  left:-30px;
-  width:160px;
-  transform:rotate(-45deg);
-  text-align:center;
-}
-#container {
-  position:relative;
-  width:100%;
-  background-color:#282E34;
-  box-shadow: -2px -2px 5px white,2px -2px 5px white;
-}
-#container > nav {
-  width:100%;
-  display:flex;
-height:60px;
-}
-#logo {
-  line-height:60px;
-  font-size:30px;
-  padding: 0 50px;
-  color: white;
-  width:40%;
-  letter-spacing:2px;
-	font-family: "Brush Script MT", cursive; font-size: 32px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 26.4px;
-	margin-top: 1%;
 
-}
-#container > nav > ul {
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
-    display: flex;
-    position: absolute;
-    right: 50px;
-    /* min-width: 60%; */
-    z-index: 99;
-}
-#container > nav > ul > li {
-  line-height:60px;
-  margin: 0 0px;
-  padding:0;
-  text-align:center;
-  display:inline-block;
-
-/*   background-color:green; */
-  min-width:120px;
-
-}
-#container > nav > ul > li > a {
-  position:relative;
-/*   background-color:red; */
-  margin: 0 20px;
-    color: white;
-}
-#container > nav > ul > li:hover {
-  background-color: #0088ff;
-  border-radius: 5px;
-}
-#container > nav > ul > .dropdown:hover {
-  border-bottom:none;
-  border-radius: 5px;
-}
-#container > nav > ul > .dropdown:hover >  .dd
-{
-  display:block;
-  border-radius: 5px;
-}
-.dropdown:hover > a .fa-caret-down {
-  display:none;
-  border-radius: 5px;
-}
-a {
-  text-decoration:none;
-  color: #ffffff;
-}
-
-a:visited {
-  text-decoration:none;
-  color: #ffffff;
-}
-
-
-
-#container > nav > ul > li > div {
-  position:absolute;
-  padding: 0 10px;
-
-  background-color:black;
-  display:none;
-  background-color:aliceblue;
-  min-width:100px;
-}
-
-#container > nav > ul > li > div > ul {
-  margin:0px 0 10px 0;
-  padding:0;
-  list-style:none;
-}
-#u_a_c {
-  position:relative;
-  width:100%;
-/*   background-color:red; */
-}
-#up_arrow {
-  position:relative;
-  width:20px;
-  height:20px;
-  left:42%;
-  top:-10px;
-  background-color:aliceblue;
-  transform:rotate(45deg);
-}
-#container > nav > ul > li> div > ul > li:hover {
-  background-color:rgba(0,0,0,0.2);
-  border-radius: 5px;
-}
-#container > nav > ul > li > div > ul > li > a {
-  padding : 5px;
-    color:black;
-}
-/* Main content */
-.main {
-  font-size: 20px; /* Increased text to enable scrolling */
-	
-
-  border:0px;
-
-	padding-bottom: 50px;
-	width: relative;
-}
-.gg {
-	margin-top: 5px;
-	margin-left: 5px;
-	margin-right: 5px;
-	margin-bottom: 5px;
-}
-img.hover-shadow {
-      margin-bottom: 5%;
-  		transition: 0.3s;
-      border-radius: 10px;
-		}
-		.hover-shadow:hover {
-  		box-shadow: 0 50px 70px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-		}
-
-.join {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Helvetica Neue", Arial, sans-serif;
-  font-size: 20px;
-  color: white;
-  font-weight: bolder;
-  width: 100px;
-  border-radius: 18px;
-  padding: 10px;
-  background-color: #5865F2;
-  margin-bottom: 10%;
-}
-h3 {
-  font-weight: normal;
-}
-#warning-message { display: none; margin: 5px; padding: 7px;}
-
-    @media only screen and (orientation:portrait){
-
-        #wrapper { display:none; }
-
-        #warning-message { display:block;}
-
+<head>
+  <title>Grasp Excellence</title>
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="icon" href="./assets/logo.png" type="image/x-icon">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
     }
 
-    @media only screen and (orientation:landscape){
-
-        #warning-message { display:none; }
-
+    body {
+      background-color: #dedede;
+      background-repeat: no-repeat;
     }
-    .haha {
-    	margin-top: 5px;
-    margin-left:5px;
-      font-size: 20px; /* Increased text to enable scrolling */
-      padding: 0px 10px;
-    	margin-right: 5px;
-    	background: rgba( 255, 255, 255, 0.55 );
-    	box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-    	backdrop-filter: blur( 15px );
-    	-webkit-backdrop-filter: blur( 15px );
-    	border-radius: 10px;
-    	border: 1px solid rgba( 255, 255, 255, 0.18 );
 
-    	margin-top: 40px;
-    	margin-left: 5px;
-    	margin-right: 5px;
-    	width: relative;
+    #ribbon {
+      position: fixed;
+      background-color: red;
+      color: white;
+      top: 40px;
+      left: -30px;
+      width: 160px;
+      transform: rotate(-45deg);
+      text-align: center;
     }
-    #blah {
-      position:relative;
-      width:100%;
-      background-color:black;
-      box-shadow: -20px -5px 5px white,20px -5px 5px white;
 
+    #container {
+      position: relative;
+      width: 100%;
+      background-color: #282E34;
+      box-shadow: -2px -2px 5px white, 2px -2px 5px white;
     }
-    #blah > nav {
-      width:100%;
-      display:flex;
-    height:60px;
 
+    #container>nav {
+      width: 100%;
+      display: flex;
+      height: 60px;
     }
+
     #logo {
-      line-height:60px;
-      font-size:30px;
+      line-height: 60px;
+      font-size: 30px;
       padding: 0 50px;
       color: white;
-      width:40%;
-      letter-spacing:2px;
-    	font-family: "Brush Script MT", cursive; font-size: 32px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 26.4px;
-    	margin-top: 1%;
+      width: 40%;
+      letter-spacing: 2px;
+      font-family: "Brush Script MT", cursive;
+      font-size: 32px;
+      font-style: normal;
+      font-variant: normal;
+      font-weight: 700;
+      line-height: 26.4px;
+      margin-top: 1%;
 
     }
-    #blah > nav > ul {
-        margin: 0;
-        padding: 0;
-        list-style-type: none;
-        display: flex;
-        position: absolute;
-        right: 50px;
-        /* min-width: 60%; */
-        z-index: 99;
+
+    #container>nav>ul {
+      margin: 0;
+      padding: 0;
+      list-style-type: none;
+      display: flex;
+      position: absolute;
+      right: 50px;
+      /* min-width: 60%; */
+      z-index: 99;
     }
-    #blah > nav > ul > li {
-      line-height:60px;
+
+    #container>nav>ul>li {
+      line-height: 60px;
       margin: 0 0px;
-      padding:0;
-      text-align:center;
-      display:inline-block;
+      padding: 0;
+      text-align: center;
+      display: inline-block;
 
-    /*   background-color:green; */
-      min-width:120px;
+      /*   background-color:green; */
+      min-width: 120px;
 
     }
-    #blah > nav > ul > li > a {
-      position:relative;
-    /*   background-color:red; */
+
+    #container>nav>ul>li>a {
+      position: relative;
+      /*   background-color:red; */
       margin: 0 20px;
-        color:white;
+      color: white;
     }
-    #blah > nav > ul > li:hover {
+
+    #container>nav>ul>li:hover {
+      background-color: #0088ff;
+      border-radius: 5px;
+    }
+
+    #container>nav>ul>.dropdown:hover {
+      border-bottom: none;
+      border-radius: 5px;
+    }
+
+    #container>nav>ul>.dropdown:hover>.dd {
+      display: block;
+      border-radius: 5px;
+    }
+
+    .dropdown:hover>a .fa-caret-down {
+      display: none;
+      border-radius: 5px;
+    }
+
+    a {
+      text-decoration: none;
+      color: #ffffff;
+    }
+
+    a:visited {
+      text-decoration: none;
+      color: #ffffff;
+    }
+
+
+
+    #container>nav>ul>li>div {
+      position: absolute;
+      padding: 0 10px;
+
+      background-color: black;
+      display: none;
+      background-color: aliceblue;
+      min-width: 100px;
+    }
+
+    #container>nav>ul>li>div>ul {
+      margin: 0px 0 10px 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    #u_a_c {
+      position: relative;
+      width: 100%;
+      /*   background-color:red; */
+    }
+
+    #up_arrow {
+      position: relative;
+      width: 20px;
+      height: 20px;
+      left: 42%;
+      top: -10px;
+      background-color: aliceblue;
+      transform: rotate(45deg);
+    }
+
+    #container>nav>ul>li>div>ul>li:hover {
+      background-color: rgba(0, 0, 0, 0.2);
+      border-radius: 5px;
+    }
+
+    #container>nav>ul>li>div>ul>li>a {
+      padding: 5px;
+      color: black;
+    }
+
+    /* Main content */
+    .main {
+      font-size: 20px;
+      /* Increased text to enable scrolling */
+
+
+      border: 0px;
+
+      padding-bottom: 50px;
+      width: relative;
+    }
+
+    .gg {
+      margin-top: 5px;
+      margin-left: 5px;
+      margin-right: 5px;
+      margin-bottom: 5px;
+    }
+
+    img.hover-shadow {
+      margin-bottom: 5%;
+      transition: 0.3s;
+      border-radius: 10px;
+    }
+
+    .hover-shadow:hover {
+      box-shadow: 0 50px 70px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+
+    .join {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Helvetica Neue", Arial, sans-serif;
+      font-size: 20px;
+      color: white;
+      font-weight: bolder;
+      width: 100px;
+      border-radius: 18px;
+      padding: 10px;
+      background-color: #5865F2;
+      margin-bottom: 10%;
+    }
+
+    h3 {
+      font-weight: normal;
+    }
+
+    #warning-message {
+      display: none;
+      margin: 5px;
+      padding: 7px;
+    }
+
+    @media only screen and (orientation:portrait) {
+
+      #wrapper {
+        display: none;
+      }
+
+      #warning-message {
+        display: block;
+      }
+
+    }
+
+    @media only screen and (orientation:landscape) {
+
+      #warning-message {
+        display: none;
+      }
+
+    }
+
+    .haha {
+      margin-top: 5px;
+      margin-left: 5px;
+      font-size: 20px;
+      /* Increased text to enable scrolling */
+      padding: 0px 10px;
+      margin-right: 5px;
+      background: rgba(255, 255, 255, 0.55);
+      box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+      backdrop-filter: blur(15px);
+      -webkit-backdrop-filter: blur(15px);
+      border-radius: 10px;
+      border: 1px solid rgba(255, 255, 255, 0.18);
+
+      margin-top: 40px;
+      margin-left: 5px;
+      margin-right: 5px;
+      width: relative;
+    }
+
+    #blah {
+      position: relative;
+      width: 100%;
+      background-color: black;
+      box-shadow: -20px -5px 5px white, 20px -5px 5px white;
+
+    }
+
+    #blah>nav {
+      width: 100%;
+      display: flex;
+      height: 60px;
+
+    }
+
+    #logo {
+      line-height: 60px;
+      font-size: 30px;
+      padding: 0 50px;
+      color: white;
+      width: 40%;
+      letter-spacing: 2px;
+      font-family: "Brush Script MT", cursive;
+      font-size: 32px;
+      font-style: normal;
+      font-variant: normal;
+      font-weight: 700;
+      line-height: 26.4px;
+      margin-top: 1%;
+
+    }
+
+    #blah>nav>ul {
+      margin: 0;
+      padding: 0;
+      list-style-type: none;
+      display: flex;
+      position: absolute;
+      right: 50px;
+      /* min-width: 60%; */
+      z-index: 99;
+    }
+
+    #blah>nav>ul>li {
+      line-height: 60px;
+      margin: 0 0px;
+      padding: 0;
+      text-align: center;
+      display: inline-block;
+
+      /*   background-color:green; */
+      min-width: 120px;
+
+    }
+
+    #blah>nav>ul>li>a {
+      position: relative;
+      /*   background-color:red; */
+      margin: 0 20px;
+      color: white;
+    }
+
+    #blah>nav>ul>li:hover {
       border-bottom: 2px solid white;
       background-color: #0088ff;
     }
-    #blah > nav > ul > .dropdown:hover {
-      border-bottom:none;
+
+    #blah>nav>ul>.dropdown:hover {
+      border-bottom: none;
     }
-    #blah > nav > ul > .dropdown:hover >  .dd
-    {
-      display:block;
+
+    #blah>nav>ul>.dropdown:hover>.dd {
+      display: block;
     }
-    .dropdown:hover > a .fa-caret-down {
-      display:none;
+
+    .dropdown:hover>a .fa-caret-down {
+      display: none;
     }
+
     a {
-      text-decoration:none;
+      text-decoration: none;
 
     }
 
-    #blah > nav > ul > li > div {
-      position:absolute;
+    #blah>nav>ul>li>div {
+      position: absolute;
       padding: 0 10px;
 
-      background-color:black;
-      display:none;
-      background-color:aliceblue;
-      min-width:50px;
+      background-color: black;
+      display: none;
+      background-color: aliceblue;
+      min-width: 50px;
     }
 
-    #blah > nav > ul > li > div > ul {
-      margin:0px 0 10px 0;
-      padding:0;
-      list-style:none;
+    #blah>nav>ul>li>div>ul {
+      margin: 0px 0 10px 0;
+      padding: 0;
+      list-style: none;
     }
+
     #u_a_c {
-      position:relative;
-      width:100%;
-    /*   background-color:red; */
+      position: relative;
+      width: 100%;
+      /*   background-color:red; */
     }
+
     #up_arrow {
-      position:relative;
-      width:20px;
-      height:20px;
-      left:42%;
-      top:-10px;
-      background-color:aliceblue;
-      transform:rotate(45deg);
+      position: relative;
+      width: 20px;
+      height: 20px;
+      left: 42%;
+      top: -10px;
+      background-color: aliceblue;
+      transform: rotate(45deg);
     }
-    #blah > nav > ul > li> div > ul > li:hover {
-      background-color:rgba(0,0,0,0.2);
+
+    #blah>nav>ul>li>div>ul>li:hover {
+      background-color: rgba(0, 0, 0, 0.2);
     }
-    #blah > nav > ul > li > div > ul > li > a {
-      padding : 5px;
-        color:black;
+
+    #blah>nav>ul>li>div>ul>li>a {
+      padding: 5px;
+      color: black;
     }
+
     .button {
-  background-color: #555555; /* Green */
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-}
-html { overflow-x: hidden; }
-</style>
-  </head>
-  <body onload="noLogin()">
-    <div id="warning-message" style="background-image: url('./assets/Screenshot 2021-07-03 210518.png'); margin-left:-1px; margin-right:-1px; margin-bottom:-1; margin-top:-1px">
-<br><br><p align="center"><a href="./menu.html"><button class="join" style="width:50%">Main Menu</button></a></p>
+      background-color: #555555;
+      /* Green */
+      border: none;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+    }
 
-      <div class="haha" >
-        <div class="gg"><br>
-          <br>
-          <b><h1 align="center">Welcome to Grasp Excellence!</h1></b><br>
-          <p align="center"><img class="hover-shadow" src="./assets/Discord server.png" style="height:20%; width:100%"></img></p>
-          <p align="center"><button class="join"><a href="https://discord.gg/YvP5W5Vuqu" target="_blank">JOIN</a></button></p>
+    html {
+      overflow-x: hidden;
+    }
+  </style>
+</head>
 
-  		  <h1 align="center">Guidelines:</h2><br>
-  		  <p align="center">Over here you will recieve the best sample papers made by one of our own grade students. The sample papers will cover the CBSE style papers, tested and answered by the authors of the paper. There will be a bare minimum of one paper for all upcoming examinations other than Boards and Pre-Boards-2. </p><br>				<p align="center">To access these papers, you will need to navigate yourself to the subjects' tab under the Available Subjects Option. If you are looking for papers of the upcoming exam, click the link below. Hope you enjoy your time here!<br><br><i> Please be made aware that the papers will be uploaded one day before the exam and the answer keys may or may not be uploaded. For any questions regarding the questions please contact us for the answers. </i>
-        			 If you are willing to get your papers checked then please submit it to any one of the contact given under the section of Employees</p><br>
-        				<p align="center"><a href="./subjects/computers.html">Latest Paper</a></p><br>
+<body onload="noLogin()">
+  <div id="warning-message"
+    style="background-image: url('./assets/Screenshot 2021-07-03 210518.png'); margin-left:-1px; margin-right:-1px; margin-bottom:-1; margin-top:-1px">
+    <br><br>
+    <p align="center"><a href="./menu.html"><button class="join" style="width:50%">Main Menu</button></a></p>
+
+    <div class="haha">
+      <div class="gg"><br>
+        <br>
+        <b>
+          <h1 align="center">Welcome to Grasp Excellence!</h1>
+        </b><br>
+        <p align="center"><img class="hover-shadow" src="./assets/Discord server.png"
+            style="height:20%; width:100%"></img></p>
+        <p align="center"><button class="join"><a href="https://discord.gg/YvP5W5Vuqu" target="_blank">JOIN</a></button>
+        </p>
+
+        <h1 align="center">Guidelines:</h2><br>
+          <p align="center">Over here you will recieve the best sample papers made by one of our own grade students. The
+            sample papers will cover the CBSE style papers, tested and answered by the authors of the paper. There will
+            be a bare minimum of one paper for all upcoming examinations other than Boards and Pre-Boards-2. </p><br>
+          <p align="center">To access these papers, you will need to navigate yourself to the subjects' tab under the
+            Available Subjects Option. If you are looking for papers of the upcoming exam, click the link below. Hope
+            you enjoy your time here!<br><br><i> Please be made aware that the papers will be uploaded one day before
+              the exam and the answer keys may or may not be uploaded. For any questions regarding the questions please
+              contact us for the answers. </i>
+            If you are willing to get your papers checked then please submit it to any one of the contact given under
+            the section of Employees</p><br>
+          <p align="center"><a href="./subjects/computers.html">Latest Paper</a></p><br>
 
       </div>
-      </div><br><br>
+    </div><br><br>
 
 
-            <script src = "./js/errors.js"></script>
+    <script src="./js/errors.js"></script>
 
 
 
@@ -363,55 +443,66 @@ html { overflow-x: hidden; }
 
       <nav>
         <div id="logo">Grasp Excellence</div>
-        <marquee style="margin-right: 700px; margin-top: 20px; color:white;" width="500px"><u><a href="./docs/first_term_schedule_for_gr_9_and_10.pdf"> First Term Schedule</a></u>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Term One Examination Postponed to Mid September &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Bridge Classes resume (23rd August)</marquee>
+        <marquee style="margin-right: 700px; margin-top: 20px; color:white;" width="500px"><u><a
+              href="./docs/first_term_schedule_for_gr_9_and_10.pdf"> First Term Schedule</a></u>&nbsp &nbsp &nbsp &nbsp
+          &nbsp &nbsp &nbsp &nbsp Term One Examination Postponed to Mid September &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+          &nbsp &nbsp Bridge Classes resume (23rd August)</marquee>
 
         <ul>
           <li><a href="./home.html">Home</a></li>
           <li><a href="./Syllabus.html" target="main">Syllabus</a></li>
-          <li class="dropdown" onmouseover="hover(this);" onmouseout="out(this);"><a href="#">S.P.'s &nbsp;<i class="fa fa-caret-down"></i></a>
+          <li class="dropdown" onmouseover="hover(this);" onmouseout="out(this);"><a href="#">S.P.'s &nbsp;<i
+                class="fa fa-caret-down"></i></a>
             <div class="dd">
               <div id="up_arrow"></div>
-            <ul>
+              <ul>
 
-              <li><a href="./subjects/english.html" target="main">English</a></li>
-              <li><a href="./subjects/maths.html" target="main">Maths</a></li>
-              <li><a href="./subjects/science.html" target="main">Science</a></li>
-              <li><a href="./subjects/SST.html" target="main">SST</a></li>
-              <li><a href="./subjects/hindi.html" target="main">Hindi</a></li>
-              <!-- Not yet created -->
-              <li><a href="./subjects/msc.html" target="main">Moral Sc.</a></li>
-              <li><a href="./subjects/computers.html" target="main">Computers</a></li>
-              <!-- Not yet created -->
-            </ul>
+                <li><a href="./subjects/english.html" target="main">English</a></li>
+                <li><a href="./subjects/maths.html" target="main">Maths</a></li>
+                <li><a href="./subjects/science.html" target="main">Science</a></li>
+                <li><a href="./subjects/SST.html" target="main">SST</a></li>
+                <li><a href="./subjects/hindi.html" target="main">Hindi</a></li>
+                <!-- Not yet created -->
+                <li><a href="./subjects/msc.html" target="main">Moral Sc.</a></li>
+                <li><a href="./subjects/computers.html" target="main">Computers</a></li>
+                <!-- Not yet created -->
+              </ul>
             </div>
           </li>
           <li><a href="./contact.html" target="main">Employees</a></li>
           <li class="dropdown"><a href="#">Others &nbsp;<i class="fa fa-caret-down"></i> </a>
-           <div class="dd">
-             <div id="u_a_c"><div id="up_arrow"></div></div>
-            <ul>
+            <div class="dd">
+              <div id="u_a_c">
+                <div id="up_arrow"></div>
+              </div>
+              <ul>
 
-              <li><a href="./resources.html" target="main">Resources</a></li>
-              <li><a href="./member.html" target="main">Members</a></li>
-              <!-- Not yet created -->
-              <li><a href="./vacancy.html" target="main">Vacancies</a></li>
-              <!-- Not yet created -->
-            </ul>
+                <li><a href="./resources.html" target="main">Resources</a></li>
+                <li><a href="./member.html" target="main">Members</a></li>
+                <!-- Not yet created -->
+                <li><a href="./vacancy.html" target="main">Vacancies</a></li>
+                <!-- Not yet created -->
+              </ul>
             </div>
         </ul>
       </nav>
     </div><br><br><br><br>
-<iframe src="./main.html" class="main" width="100%" height="1300px"name="main" >
-			
-  </iframe><br><br><br><br>
-  <div style="background-color:#282E34; width: 100%; height: 170px;"><br>
-    <p style="font-size: 11px; font-family: Verdana, Geneva, Tahoma, sans-serif;color: white; margin-left: 50px; margin-top: 20px;">For any queries please get in touch with our moderators on discord!<br/><br/>Credits for website: Faizaan, Tanmeen, Shashwat<br><br/>Headed by: Sathya Mitiran (Founder and President)<br/><br/>Access to this website and the server is a priviledge and is to be treated like one!</p><br>
+    <iframe src="./main.html" class="main" width="100%" height="1300px" name="main">
+
+    </iframe><br><br><br><br>
+    <div style="background-color:#282E34; width: 100%; height: 170px;"><br>
+      <p
+        style="font-size: 11px; font-family: Verdana, Geneva, Tahoma, sans-serif;color: white; margin-left: 50px; margin-top: 20px;">
+        For any queries please get in touch with our moderators on discord!<br /><br />Credits for website: Faizaan,
+        Tanmeen, Shashwat<br><br />Headed by: Sathya Mitiran (Founder and President)<br /><br />Access to this website
+        and the server is a priviledge and is to be treated like one!</p><br>
+    </div>
+
+
+
+
   </div>
+  <script src="./js/errors.js"></script>
+</body>
 
-  
-  
-  
-</div>
-<script src="./js/errors.js"></script>
-</body></html>
-
+</html>
