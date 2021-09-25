@@ -159,5 +159,9 @@ function check() {
     localStorage.name = a;
     window.location.href = "./home.html";
   }
+  else if (a == "Kanishk" && b == "s15916") {
+    localStorage.name = a;
+    window.location.href = "./home.html";
+  }
   else alert("Invalid Login ID and Password");
 }
