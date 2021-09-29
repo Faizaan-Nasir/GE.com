@@ -9,7 +9,7 @@ $(document).ready(() => {
     };
 
     $.post(
-      "https://ge-employees.herokuapp.com/submit",
+      "https://ge-employees.herokuapp.com/submit?type=normal",
       jsonToPost,
       (response) => {
         if (response == "OK") {
