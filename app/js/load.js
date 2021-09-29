@@ -1,4 +1,4 @@
-fetch(`https://ge-employees.herokuapp.com/data/${subject}`)
+fetch(`https://ge-employees.herokuapp.com/data/${subject}?type=normal`)
   .then((data) => {
     return data.json();
   })
@@ -8,4 +8,9 @@ fetch(`https://ge-employees.herokuapp.com/data/${subject}`)
         `<div class="grid-item-1"><a href = ${element.link} target="page">${element.subject} ${element.exam} Set ${element.set} (${element.type})</a></div><br>`
       );
     });
+  })
+  .catch((err) => {
+    alert(
+      "Sorry for the inconveninece but something's wrong with our systems.. Please inform the devs in the chat"
+    );
   });
