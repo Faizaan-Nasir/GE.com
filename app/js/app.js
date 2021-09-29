@@ -20,8 +20,8 @@ function check() {
     })
     .then((json) => {
       if (json.message == "Authenticated") {
-        window.location.href = "/home";
         localStorage.name = a;
+        window.location.href = "./home";
       } else {
         alert("Invalid Login ID and Password");
       }
