@@ -5,7 +5,7 @@ fetch(`https://ge-employees.herokuapp.com/data/${subject}?type=normal`)
   .then((papers) => {
     papers.forEach((element) => {
       $(".papers").append(
-        `<div class="grid-item-1"><a href = ${element.link} target=_blank>${element.subject} ${element.exam} Set ${element.set} (${element.type})</a></div><br>`
+        `<div class="grid-item-1"><a href = ${element.link} target="_blank">${element.subject} ${element.exam} Set ${element.set} (${element.type})</a></div><br>`
       );
     });
   })
