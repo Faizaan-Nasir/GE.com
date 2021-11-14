@@ -29,7 +29,7 @@ function check() {
     .catch((err) => {
       console.error(err);
       alert(
-        "Oops. there seems to be some error with our systems. Please sontact the devs"
+        "Oops. there seems to be some error with our systems. Please contact the devs"
       );
     });
 }
