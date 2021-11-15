@@ -5,6 +5,7 @@
   <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" href="./assets/logo.png" type="image/x-icon">
+
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <style>
     * {
@@ -235,7 +236,7 @@
     }
 
     .haha {
-      margin-top: 40px;
+      margin-top: 5px;
       margin-left: 5px;
       font-size: 20px;
       /* Increased text to enable scrolling */
@@ -377,7 +378,22 @@
     #blah>nav>ul>li>div>ul>li>a {
       padding: 5px;
       color: black;
+    }
 
+    .button {
+      background-color: #555555;
+      /* Green */
+      border: none;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+    }
+
+    html {
+      overflow-x: hidden;
     }
 
     .grid-item-1 {
@@ -406,65 +422,29 @@
 </head>
 
 <body onload="noLogin()">
-  <div id="warning-message">
-    <div id="container">
-
-      <nav>
-        <div id="logo">Grasp Excellence</div>
-        <ul>
-          <li><a href="/home">Home</a></li>
-          <li><a href="/syllabus">Syllabus</a></li>
-          <li class="dropdown" onmouseover="hover(this);" onmouseout="out(this);"><a href="#">S.P.'s &nbsp;<i
-                class="fa fa-caret-down"></i></a>
-            <div class="dd">
-              <div id="up_arrow"></div>
-              <ul>
-
-                <li><a href="/subjects/english">English</a></li>
-                <li><a href="/subjects/maths">Maths</a></li>
-                <li><a href="/subjects/science">Science</a></li>
-                <li><a href="/subjects/SST">SST</a></li>
-                <li><a href="/subjects/hindi">Hindi</a></li>
-                <!-- Not yet created -->
-                <li><a href="/subjects/msc">Moral Sc.</a></li>
-                <li><a href="/subjects/computers">Computers</a></li>
-                <!-- Not yet created -->
-              </ul>
-            </div>
-          </li>
-          <li><a href="/contact">Employees</a></li>
-          <li class="dropdown"><a href="#">Others &nbsp;<i class="fa fa-caret-down"></i> </a>
-            <div class="dd">
-              <div id="u_a_c">
-                <div id="up_arrow"></div>
-              </div>
-              <ul>
-
-                <li><a href="/resources">Resources</a></li>
-                <li><a href="/member">Members</a></li>
-                <!-- Not yet created -->
-                <li><a href="/vacancy">Vacancies</a></li>
-                <!-- Not yet created -->
-              </ul>
-            </div>
-        </ul>
-      </nav>
-    </div><br><br>
-    <div class="haha">
-      <div class="gg"><br><br>
-        <b>
-          <h1 align="center">Science Sample Papers:</h1>
-        </b><br>
-        <p align="center"><img class="hover-shadow" src="./assets/Screenshot 2021-06-22 150452.png"
-            style="height:50%; width:100%"></img></p>
-
-        <h1 align="center">Guidelines:</h2><br>
-          <p align="center">Please find attachments to the Science Sample Papers (Objectives and Subjectives)</p><br>
+  <div id="warning-message"
+    style="background-image: url('./assets/Screenshot 2021-07-03 210518.png'); margin-left:-1px; margin-right:-1px; margin-bottom:-1; margin-top:-1px">
+    <br><br>
+    <p align="center"><a href="https://ge-com-grasp-excellence.vercel.app/app/menu.html"><button class="join"
+          style="width:50%">Main Menu</button></a></p>
 
 
-          -><a href="./docs/PT2_SCI_SUB_SET2.docx"> Science PT2 Set 2 (Subjectives) </a><br>
-      </div>
-    </div><br><br>
+    <div class="gg"><br><br>
+      <b>
+        <h1 align="center">Science Sample Papers:</h1>
+      </b><br>
+      </p>
+
+      <br>
+      <h1 align="center">Guidelines:</h2><br>
+        <p align="center">Please find attachments to the Science Sample Papers (Objectives and Subjectives)</p><br>
+        <p align="center" class="papers" class="papers" style="font-size:25px">
+
+          <br>
+        </p>
+        <br><br>
+        <br>
+    </div>
 
 
     <script src="./js/errors.js"></script>
@@ -473,7 +453,6 @@
 
 
   </div>
-
   <div id="wrapper">
 
     <div id="container">
@@ -489,21 +468,18 @@
 
       <br>
       <h1 align="center">Guidelines:</h2><br>
-        <p align="center">Please find attachments to the Science Sample Papers (Objectives and Subjectives)<br>Your
-          objectives will appear in the box below.</p><br>
-        <p align="center" class="papers" style="font-size:25px">
-        <div class="grid-item-1"><a
-            href="https://forms.office.com/pages/responsepage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAANAARkRo9xURDNNVURUNkhVSUJFTk9aUU1aVDNQUEtFMi4u"
-            target="page"> Science PT2 Set 1 (Objectives) </a></div><br>
-        < <br><br>
-          <p align="center"><iframe style="border-radius:10px; background-color:black;" width="90%" height="600px"
-              name="page"></iframe>
-          </p>
+        <p align="center">Please find attachments to the Grade 10 Science Sample Papers (Objectives and Subjectives)<br>
+        <p align="center" class="papers" class="papers" style="font-size:25px">
 
-          <br>
+        </p>
+        <br><br>
+
+        <br>
     </div>
   </div><br><br>
 
+
+  </div>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script src="./js/errors.js"></script>
   <script>
@@ -511,8 +487,6 @@
   </script>
   <script src="./js/load.js"></script>
 
-
-  </div>
 </body>
 
 </html>
