@@ -8,7 +8,7 @@ function check() {
     pwd: b,
   };
 
-  fetch("https://ge-employees.herokuapp.com/authenticate", {
+  fetch("https://ge-employees.herokuapp.com/authenticate?type=normal", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
