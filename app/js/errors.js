@@ -5,6 +5,6 @@ function noLogin() {
     localStorage.name == "null" ||
     localStorage.name == "undefined"
   ) {
-    window.location.href = "/error.html";
+    window.location.href = "https://ge-com.vercel.app/app/error.html";
   }
 }
