@@ -1,6 +1,6 @@
 # Grasp Excellence
 
-Link to the app : https://grasp-excellence.netlify.app/login
+Link to the app : https://ge-com.vercel.app/app/login.html
 
 ## Who are we?
 
@@ -8,7 +8,7 @@ A small group of students fuelled by the passion for teaching.
 
 ## Our initiative
 
-To help students who need help in their scholastic career and offer them a vivid range of helpful resources.
+To help students who need help in their scholastic career and offer them a vivid range of helpful resources. We help students in DPS Sharjah of Grade 8 to 10 by providing them the needful resources and sample papers which help them excell in their examinations. 
 
 ## General Instructions (Devs)
 

@@ -1,4 +1,4 @@
-fetch(`https://ge-employees.herokuapp.com/data/${subject}`)
+fetch(`https://ge-employees.herokuapp.com/data/${subject}?type=normal`)
   .then((data) => {
     return data.json();
   })

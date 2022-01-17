@@ -4,7 +4,7 @@ body {
   background-color: #f2f2f2;
 }
 .container img {
-  width: 93%;
+  width: 50%;
   height: 100%;
 }
 
@@ -103,4 +103,29 @@ a:visited,
 a:link,
 a:active {
   text-decoration: none;
+}
+#warning-message {
+  display: none;
+  margin: 5px;
+  padding: 7px;
+}
+
+@media only screen and (orientation:portrait) {
+
+  #wrapper {
+    display: none;
+  }
+
+  #warning-message {
+    display: block;
+  }
+
+}
+
+@media only screen and (orientation:landscape) {
+
+  #warning-message {
+    display: none;
+  }
+
 }
