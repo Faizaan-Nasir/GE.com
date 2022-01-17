@@ -1,50 +1,175 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-  <title>Login Page</title>
-  <link rel="icon" href="./assets/favicon for website.png" type="image/x-icon" />
-  <link rel="icon" href="./assets/favicon for website.png" type="image/x-icon" />
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>General Website Login</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Bitter:wght@200&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Bitter:wght@200&family=Outfit:wght@500&display=swap');
 
-  <link rel="stylesheet" href="./css/login.css" />
-</head>
-<script>
-  function disableClick() {
-    document.onclick = function (event) {
-      if (event.button == 2) {
-        alert("Right Click Message");
-        return false;
+    body {
+      margin: 0px;
+    }
+
+    .img {
+      height: 100vh;
+      width: 45em;
+      margin-bottom: -4px;
+    }
+
+    /* the main div in the landscape body */
+    .main {
+      margin-top: -34%;
+      margin-left: 50%;
+      text-align: center;
+    }
+
+    /* H1 in landscape */
+    .heading {
+      font-weight: bold;
+      font-size: 65px;
+      font-family: 'Bitter', serif;
+      font-family: 'Outfit', sans-serif;
+      color: #2b2b2b;
+      text-shadow: 4px 4px 0px rgb(0 0 0 / 10%);
+    }
+
+    .input {
+      margin-top: 10px;
+      border-radius: 10px;
+      height: 30px;
+      width: 300px;
+      background-color: aliceblue;
+      text-indent: 4px;
+      border-color: black;
+    }
+
+    /* BUTTON MY FRIEND */
+    .button-28 {
+      background-color: rgb(49, 49, 49);
+      border: 0 solid #e2e8f0;
+      border-radius: 1.5rem;
+      box-sizing: border-box;
+      color: #ffffff;
+      cursor: pointer;
+      display: inline-block;
+      font-family: "Basier circle", -apple-system, system-ui, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+      font-size: 14px;
+      font-weight: 600;
+      line-height: 1;
+      padding: 1rem 1.6rem;
+      text-align: center;
+      text-decoration: none #ffffff solid;
+      text-decoration-thickness: auto;
+      transition: all .1s cubic-bezier(.4, 0, .2, 1);
+      box-shadow: 0px 1px 2px rgba(166, 175, 195, 0.25);
+      user-select: none;
+      -webkit-user-select: none;
+      touch-action: manipulation;
+      margin-top: 10px;
+    }
+
+    .button-28:hover {
+      background-color: #1e293b;
+      color: #fff;
+    }
+
+    @media (min-width: 768px) {
+      .button-28 {
+        font-size: 0.8rem;
+        padding: 1rem 2rem;
       }
-    };
-  }
-</script>
+    }
 
-<body onload="disableClick"></body>
+    /* mobile code */
+    #warning-message {
+      display: none;
+      height: 100%;
+    }
+
+    @media only screen and (orientation:portrait) {
+
+      #wrapper {
+        display: none;
+      }
+
+      #warning-message {
+        display: block;
+      }
+
+    }
+
+    @media only screen and (orientation:landscape) {
+
+      #warning-message {
+        display: none;
+      }
+
+    }
+
+    .img1 {
+      height: 230px;
+      width: 100%;
+    }
+
+    .heading1 {
+      font-weight: bold;
+      font-size: 35px;
+      font-family: 'Bitter', serif;
+      font-family: 'Outfit', sans-serif;
+      color: #2b2b2b;
+      text-shadow: 4px 4px 0px rgb(0 0 0 / 10%);
+    }
+
+    .input1 {
+      margin-top: 10px;
+      border-radius: 10px;
+      height: 30px;
+      width: 200px;
+      background-color: aliceblue;
+      border-color: black;
+    }
+
+    .mobile {
+      text-align: center;
+    }
+
+    /* text codes */
+    .text style {
+      font-family: 'Bitter', serif;
+    }
+  </style>
+</head>
 
 <body>
-  <div class="main-wrap">
-    <div class="container">
-      <img src="./assets/login_pic.png" />
-    </div>
-    <div align="center">
-      <h1 align="center" class="text-center header">Verification Form</h1>
-      <input type="text" placeholder="Enter your name " id="inputId" />
-      <br />
-      <input type="password" placeholder="Enter your password " id="password" />
-      <br /><span class="notice">If you have forgotten your password, please contact Faizaan, Shashwat
-        or Tanmeen</span>
-      <br /><br /><br /><br />
-      <button type="button" onclick="check()" class="btn mb-2 mb-md-0 btn-primary btn-block">
+  <!-- for mobiles -->
+  <div id="warning-message">
+    <div align="center"><img src="./assets/login_pic.png" class="img1"></div>
+    <h1 align="center" class="heading1">Sign In Page!</h1>
+    <div class="mobile">
+      <input class="input1" type="text" id="inputId" placeholder="Username"><br>
+      <input class="input1" type="password" id="password" placeholder="Password"><br>
+      <button type="button" onclick="check()" class="button-28">
         Submit
       </button>
-      <br />
-      <a href="https://grasp-excellence-members-kappa.vercel.app/Home%20Page.html">
-        <button class="btn mb-2 mb-md-0 btn-primary btn-block">
-          Members Login
-        </button></a>
+
     </div>
   </div>
-  <script src="./js/app.js"></script>
-</body>
+  <!-- for desktop looks -->
+  <div id="wrapper">
+    <img src="./assets/login_pic.png" class="img">
+    <div class="main">
+      <h1 class="heading">Sign in Page</h1>
+      <input class="input" type="text" id="inputId" placeholder="Username"><br>
+      <input class="input" type="password" id="password" placeholder="Password"><br>
+      <button type="button" onclick="check()" class="button-28">
+        Submit
+      </button>
+    </div>
+    <script src="./js/app.js"></script>
+</body>`
 
 </html>
