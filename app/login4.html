@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>General Website Login</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bitter:wght@200&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Bitter:wght@200&family=Outfit:wght@500&display=swap');
+
+        body {
+            margin: 0px;
+        }
+
+        /* the main div in the landscape body */
+        .main {
+            height: 50vh;
+            background-color: white;
+            text-align: center;
+            border-radius: 10px;
+            margin-left: 15%;
+            margin-right: 15%;
+            margin-top: 25vh;
+            margin-bottom: -1vh;
+            vertical-align: middle;
+        }
+
+        /* H1 in landscape */
+        .heading {
+            font-weight: bold;
+            font-size: 65px;
+            font-family: 'Bitter', serif;
+            font-family: 'Outfit', sans-serif;
+            color: #2b2b2b;
+            text-shadow: 4px 4px 0px rgb(0 0 0 / 10%);
+        }
+
+        .input {
+            margin-top: 10px;
+            border-radius: 10px;
+            height: 30px;
+            width: 300px;
+            background-color: aliceblue;
+            text-indent: 4px;
+            border-color: black;
+        }
+
+        /* BUTTON MY FRIEND */
+        .button-28 {
+            background-color: rgb(49, 49, 49);
+            border: 0 solid #e2e8f0;
+            border-radius: 1.5rem;
+            box-sizing: border-box;
+            color: #ffffff;
+            cursor: pointer;
+            display: inline-block;
+            font-family: "Basier circle", -apple-system, system-ui, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+            font-size: 14px;
+            font-weight: 600;
+            line-height: 1;
+            padding: 1rem 1.6rem;
+            text-align: center;
+            text-decoration: none #ffffff solid;
+            text-decoration-thickness: auto;
+            transition: all .1s cubic-bezier(.4, 0, .2, 1);
+            box-shadow: 0px 1px 2px rgba(166, 175, 195, 0.25);
+            user-select: none;
+            -webkit-user-select: none;
+            touch-action: manipulation;
+            margin-top: 10px;
+        }
+
+        .button-28:hover {
+            background-color: #1e293b;
+            color: #fff;
+        }
+
+        @media (min-width: 768px) {
+            .button-28 {
+                font-size: 0.8rem;
+                padding: 1rem 2rem;
+            }
+        }
+
+        /* mobile code */
+        #warning-message {
+            display: none;
+            height: 100%;
+        }
+
+        @media only screen and (orientation:portrait) {
+
+            #wrapper {
+                display: none;
+                background-image: src(" ./assets/Purple.png");
+            }
+
+            #warning-message {
+                display: block;
+            }
+
+        }
+
+        @media only screen and (orientation:landscape) {
+
+            #warning-message {
+                display: none;
+            }
+
+        }
+
+        .img1 {
+            height: 230px;
+            width: 100%;
+        }
+
+        .heading1 {
+            font-weight: bold;
+            font-size: 35px;
+            font-family: 'Bitter', serif;
+            font-family: 'Outfit', sans-serif;
+            color: #2b2b2b;
+            text-shadow: 4px 4px 0px rgb(0 0 0 / 10%);
+        }
+
+        .input1 {
+            margin-top: 10px;
+            border-radius: 10px;
+            height: 30px;
+            width: 200px;
+            background-color: aliceblue;
+            border-color: black;
+        }
+
+        .mobile {
+            text-align: center;
+        }
+
+        /* text codes */
+        .text style {
+            font-family: 'Bitter', serif;
+        }
+    </style>
+</head>
+
+<body background="./assets/Green.png">
+    <!-- for mobiles -->
+    <div id="warning-message">
+        <div align="center"><img src="./assets/login_pic.png" class="img1"></div>
+        <h1 align="center" class="heading1">Sign In Page!</h1>
+        <div class="mobile">
+            <input class="input1" type="text" id="inputId" placeholder="Username"><br>
+            <input class="input1" type="password" id="password" placeholder="Password"><br>
+            <button type="button" onclick="check()" class="button-28">
+                Submit
+            </button>
+
+        </div>
+    </div>
+    <!-- for desktop looks -->
+    <div id="wrapper">
+        <div class="main">
+            <br>
+            <h1 class="heading">Sign in Page</h1>
+            <input class="input" type="text" id="inputId1" placeholder="Username"><br>
+            <input class="input" type="password" id="password1" placeholder="Password"><br>
+            <button type="button" onclick="check1()" class="button-28">
+                Submit
+            </button>
+        </div>
+        <script src="./js/app.js"></script>
+</body>`
+
+</html>
