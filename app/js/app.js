@@ -2,7 +2,7 @@ function check1() {
   // Selecting the input element and get its value
   let a = document.getElementById("inputId1").value;
   let b = document.getElementById("password1").value;
-
+  document.getElementById("loader").innerHTML = "<div class='loader'></div>"
   const jsonToPost = {
     usr_name: a,
     pwd: b,
@@ -24,6 +24,7 @@ function check1() {
         window.location.href = "./home.html";
       } else {
         alert("Invalid Login ID and Password");
+        window.location.href = "./login.html"
       }
     })
     .catch((err) => {

@@ -127,6 +127,41 @@
         .text style {
             font-family: 'Bitter', serif;
         }
+
+        /* loader */
+        .loader {
+            border: 16px solid #f3f3f3;
+            border-radius: 50%;
+            border-top: 16px solid #3498db;
+            width: 20px;
+            height: 20px;
+            margin-top: 4%;
+            margin-left: 94%;
+            -webkit-animation: spin 2s linear infinite;
+            /* Safari */
+            animation: spin 2s linear infinite;
+        }
+
+        /* Safari */
+        @-webkit-keyframes spin {
+            0% {
+                -webkit-transform: rotate(0deg);
+            }
+
+            100% {
+                -webkit-transform: rotate(360deg);
+            }
+        }
+
+        @keyframes spin {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
     </style>
 </head>
 
@@ -155,7 +190,9 @@
                 <b>SIGN IN</b>
             </button>
         </div>
+        <div id="loader"></div>
         <script src="./js/app.js"></script>
+    </div>
 </body>`
 
 </html>
