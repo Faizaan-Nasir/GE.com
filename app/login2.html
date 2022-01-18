@@ -45,41 +45,28 @@
         }
 
         /* BUTTON MY FRIEND */
-        .button-28 {
-            background-color: rgb(49, 49, 49);
-            border: 0 solid #e2e8f0;
-            border-radius: 1.5rem;
-            box-sizing: border-box;
-            color: #ffffff;
-            cursor: pointer;
-            display: inline-block;
-            font-family: "Basier circle", -apple-system, system-ui, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-            font-size: 14px;
-            font-weight: 600;
-            line-height: 1;
-            padding: 1rem 1.6rem;
+        .btn {
+            background-color: #F49C7A;
+            padding: 0px;
+            vertical-align: middle;
+            border-top-width: 0px;
+            border-right-width: 0px;
+            border-left-width: 0px;
+            border-bottom-width: 2px;
+            border-radius: 0px;
             text-align: center;
-            text-decoration: none #ffffff solid;
-            text-decoration-thickness: auto;
-            transition: all .1s cubic-bezier(.4, 0, .2, 1);
-            box-shadow: 0px 1px 2px rgba(166, 175, 195, 0.25);
-            user-select: none;
-            -webkit-user-select: none;
-            touch-action: manipulation;
-            margin-top: 25px;
+            border-color: black;
+            height: 35px;
+            width: 125px;
+            font-family: 'Noto Sans', sans-serif;
+            margin-top: 4vh;
+            font-size: 1rem;
+            padding: 0.6rem;
         }
 
-
-        .button-28:hover {
-            background-color: #1e293b;
-            color: #fff;
-        }
-
-        @media (min-width: 768px) {
-            .button-28 {
-                font-size: 0.8rem;
-                padding: 1rem 2rem;
-            }
+        .btn:hover {
+            background-color: #ffba9f;
+            color: black;
         }
 
         /* mobile code */
@@ -164,8 +151,8 @@
             <h1 class="heading">Sign In</h1>
             <input class="input" type="text" id="inputId1" placeholder="Username"><br>
             <input class="input" type="password" id="password1" placeholder="Password"><br>
-            <button type="button" onclick="check1()" class="button-28">
-                Submit
+            <button type="button" onclick="check1()" class="btn">
+                <b>SIGN IN</b>
             </button>
         </div>
         <script src="./js/app.js"></script>
