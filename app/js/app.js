@@ -32,6 +32,7 @@ function check1() {
       alert(
         "Oops. there seems to be some error with our systems. Please contact the devs"
       );
+      window.location.href = "./login.html"
     });
 }
 function check() {
