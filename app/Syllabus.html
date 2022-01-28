@@ -1,472 +1,220 @@
-<html>
-  <head>
-    <title>Grasp Excellence Resources</title>
-    <link
-      href="https://fonts.googleapis.com/css?family=Raleway"
-      rel="stylesheet"
-    />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-    <link rel="icon" href="/assets/logo.png" type="image/x-icon" />
-    <style>
-      * {
-        margin: 0;
-        padding: 0;
-      }
-      body {
-        background-repeat: no-repeat;
-      }
-      #ribbon {
-        position: fixed;
-        background-color: red;
-        color: white;
-        top: 40px;
-        left: -30px;
-        width: 160px;
-        transform: rotate(-45deg);
-        text-align: center;
-      }
-      #container {
-        position: relative;
-        width: 100%;
-        background-color: black;
-        box-shadow: -2px -2px 5px white, 2px -2px 5px white;
-      }
-      #container > nav {
-        width: 100%;
-        display: flex;
-        height: 60px;
-      }
-      #logo {
-        line-height: 60px;
-        font-size: 30px;
-        padding: 0 50px;
-        color: white;
-        width: 40%;
-        letter-spacing: 2px;
-        font-family: "Brush Script MT", cursive;
-        font-size: 32px;
-        font-style: normal;
-        font-variant: normal;
-        font-weight: 700;
-        line-height: 26.4px;
-        margin-top: 1%;
-      }
-      #container > nav > ul {
-        margin: 0;
-        padding: 0;
-        list-style-type: none;
-        display: flex;
-        position: absolute;
-        right: 50px;
-        /* min-width: 60%; */
-        z-index: 99;
-      }
-      #container > nav > ul > li {
-        line-height: 60px;
-        margin: 0 0px;
-        padding: 0;
-        text-align: center;
-        display: inline-block;
+<!DOCTYPE html>
+<html lang="en">
 
-        /*   background-color:green; */
-        min-width: 120px;
-      }
-      #container > nav > ul > li > a {
-        position: relative;
-        /*   background-color:red; */
-        margin: 0 20px;
-        color: white;
-      }
-      #container > nav > ul > li:hover {
-        border-bottom: 2px solid white;
-        background-color: #0088ff;
-      }
-      #container > nav > ul > .dropdown:hover {
-        border-bottom: none;
-      }
-      #container > nav > ul > .dropdown:hover > .dd {
-        display: block;
-      }
-      .dropdown:hover > a .fa-caret-down {
-        display: none;
-      }
-      a {
-        text-decoration: none;
-      }
+<head>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&display=swap');
 
-      #container > nav > ul > li > div {
-        position: absolute;
-        padding: 0 10px;
+    /* Scroll Bar */
+    ::-webkit-scrollbar {
+      width: 10px;
+    }
 
-        background-color: black;
-        display: none;
-        background-color: aliceblue;
-        min-width: 100px;
-      }
+    ::-webkit-scrollbar-track {
+      background-color: transparent;
+    }
 
-      #container > nav > ul > li > div > ul {
-        margin: 0px 0 10px 0;
-        padding: 0;
-        list-style: none;
-      }
-      #u_a_c {
-        position: relative;
-        width: 100%;
-        /*   background-color:red; */
-      }
-      #up_arrow {
-        position: relative;
-        width: 20px;
-        height: 20px;
-        left: 42%;
-        top: -10px;
-        background-color: aliceblue;
-        transform: rotate(45deg);
-      }
-      #container > nav > ul > li > div > ul > li:hover {
-        background-color: rgba(0, 0, 0, 0.2);
-      }
-      #container > nav > ul > li > div > ul > li > a {
-        padding: 5px;
-        color: black;
-      }
-      /* Main content */
-      .main {
-        margin-top: 40px;
-        margin-left: 200px;
-        font-size: 20px; /* Increased text to enable scrolling */
-        padding: 0px 10px;
-        margin-right: 200px;
-        background: rgba(255, 255, 255, 0.55);
-        box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-        backdrop-filter: blur(15px);
-        -webkit-backdrop-filter: blur(15px);
-        border-radius: 10px;
-        border: 1px solid rgba(255, 255, 255, 0.18);
+    ::-webkit-scrollbar-thumb {
+      background-color: #b5b8b9;
+      border-radius: 20px;
+      border: 6px transparent;
+      background-clip: content-box;
+    }
 
-        padding-left: 20px;
-        padding-right: 20px;
+    ::-webkit-scrollbar-thumb:hover {
+      background-color: #a8bbbf;
+    }
 
-        padding-bottom: 50px;
-        margin-top: 40px;
-        margin-left: 100px;
-        margin-right: 100px;
-        width: relative;
-      }
-      .gg {
-        margin-top: 5px;
-        margin-left: 5px;
-        margin-right: 5px;
-        margin-bottom: 5px;
-      }
-      img.hover-shadow {
-        margin-bottom: 5%;
-        transition: 0.3s;
-        border-radius: 10px;
-      }
-      .hover-shadow:hover {
-        box-shadow: 0 50px 70px 0 rgba(0, 0, 0, 0.2),
-          0 6px 20px 0 rgba(0, 0, 0, 0.19);
-      }
+    /* Basic Body */
+    body {
+      margin: 0%;
+      background-color: #E4E4E4;
+    }
 
-      .join {
-        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
-          "Oxygen", "Ubuntu", "Helvetica Neue", Arial, sans-serif;
-        font-size: 20px;
-        color: white;
-        font-weight: bolder;
-        width: 100px;
-        border-radius: 18px;
-        padding: 10px;
-        background-color: #5865f2;
-        margin-bottom: 10%;
-      }
-      h3 {
-        font-weight: normal;
-      }
-      #warning-message {
-        display: none;
-        margin: 5px;
-        padding: 7px;
-      }
+    /* Main Image */
+    .img {
+      height: 800px;
+      background: url("./assets/Syllabus.png") center top no-repeat;
+      background-size: cover;
+    }
 
-      @media only screen and (orientation: portrait) {
-        #wrapper {
-          display: none;
-        }
+    /* Text: "Syllabus" */
+    .syllabus {
+      font-family: Bookman Old Style;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 110px;
+      line-height: 188px;
+      align-items: center;
+      color: #272727;
+      margin-left: 5%;
+      margin-top: 12%;
+    }
 
-        #warning-message {
-          display: block;
-        }
-      }
+    /* Logo Image Placement */
+    .logo {
+      margin-top: 15px;
+      margin-left: 15px;
+      height: 14%;
+    }
 
-      @media only screen and (orientation: landscape) {
-        #warning-message {
-          display: none;
-        }
-      }
-      .haha {
-        margin-top: 5px;
-        margin-left: 5px;
-        font-size: 20px; /* Increased text to enable scrolling */
-        padding: 0px 10px;
-        margin-right: 5px;
-        background: rgba(255, 255, 255, 0.55);
-        box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-        backdrop-filter: blur(15px);
-        -webkit-backdrop-filter: blur(15px);
-        border-radius: 10px;
-        border: 1px solid rgba(255, 255, 255, 0.18);
+    /* Navbar */
+    nav {
+      font-family: 'Noto Sans', sans-serif;
+      color: white;
+      font-size: 22px;
+      margin-top: -7%;
+    }
 
-        margin-top: 40px;
-        margin-left: 5px;
-        margin-right: 5px;
-        width: relative;
-      }
-      #blah {
-        position: relative;
-        width: 100%;
-        background-color: black;
-        box-shadow: -20px -5px 5px white, 20px -5px 5px white;
-      }
-      #blah > nav {
-        width: 100%;
-        display: flex;
-        height: 60px;
-      }
-      #logo {
-        line-height: 60px;
-        font-size: 30px;
-        padding: 0 50px;
-        color: white;
-        width: 40%;
-        letter-spacing: 2px;
-        font-family: "Brush Script MT", cursive;
-        font-size: 32px;
-        font-style: normal;
-        font-variant: normal;
-        font-weight: 700;
-        line-height: 26.4px;
-        margin-top: 1%;
-      }
-      #blah > nav > ul {
-        margin: 0;
-        padding: 0;
-        list-style-type: none;
-        display: flex;
-        position: absolute;
-        right: 50px;
-        /* min-width: 60%; */
-        z-index: 99;
-      }
-      #blah > nav > ul > li {
-        line-height: 60px;
-        margin: 0 0px;
-        padding: 0;
-        text-align: center;
-        display: inline-block;
+    .nav {
+      width: 100px;
+      margin-left: 36%;
+    }
 
-        /*   background-color:green; */
-        min-width: 120px;
-      }
-      #blah > nav > ul > li > a {
-        position: relative;
-        /*   background-color:red; */
-        margin: 0 20px;
-        color: white;
-      }
-      #blah > nav > ul > li:hover {
-        border-bottom: 2px solid white;
-        background-color: #0088ff;
-      }
-      #blah > nav > ul > .dropdown:hover {
-        border-bottom: none;
-      }
-      #blah > nav > ul > .dropdown:hover > .dd {
-        display: block;
-      }
-      .dropdown:hover > a .fa-caret-down {
-        display: none;
-      }
-      a {
-        text-decoration: none;
-      }
+    a {
+      text-decoration: none;
+      color: white;
+    }
 
-      #blah > nav > ul > li > div {
-        position: absolute;
-        padding: 0 10px;
+    a:hover {
+      color: whitesmoke;
+    }
 
-        background-color: black;
-        display: none;
-        background-color: aliceblue;
-        min-width: 50px;
-      }
+    .navl {
+      margin-left: 5%;
+    }
 
-      #blah > nav > ul > li > div > ul {
-        margin: 0px 0 10px 0;
-        padding: 0;
-        list-style: none;
-      }
-      #u_a_c {
-        position: relative;
-        width: 100%;
-        /*   background-color:red; */
-      }
-      #up_arrow {
-        position: relative;
-        width: 20px;
-        height: 20px;
-        left: 42%;
-        top: -10px;
-        background-color: aliceblue;
-        transform: rotate(45deg);
-      }
-      #blah > nav > ul > li > div > ul > li:hover {
-        background-color: rgba(0, 0, 0, 0.2);
-      }
-      #blah > nav > ul > li > div > ul > li > a {
-        padding: 5px;
-        color: black;
-      }
-      .button {
-        background-color: #555555; /* Green */
-        border: none;
-        color: white;
-        padding: 15px 32px;
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        font-size: 16px;
-      }
-      html {
-        overflow-x: hidden;
-      }
-    </style>
-  </head>
-  <body onload="noLogin(); ">
-    <div
-      id="warning-message"
-      style="
-        background-image: url('/assets/Screenshot 2021-07-03 210518.png');
-        margin-left: -1px;
-        margin-right: -1px;
-        margin-bottom: -1;
-        margin-top: -1px;
-      "
-    >
-      <br /><br />
-      <p align="center">
-        <a href="./menu.html"
-          ><button class="join" style="width: 50%">Main Menu</button></a
-        >
-      </p>
+    /* Main Text */
+    .text {
+      font-family: 'Poppins', sans-serif;
+      margin-top: 0%;
+      margin-left: 10%;
+      margin-top: 10%;
+    }
 
-      <div class="haha">
-        <div class="gg">
-          <br />
-          <br />
-          <b
-            ><h1 style="font-size: 40px;"align="center">Upcoming Exam: Computers</h1>
-            <br />
-            <h2 style="margin-left: 5%; font-size: 35px;">Social Studies (First Term) (Refer to <a href="https://drive.google.com/file/d/1YLHaf4LYqmLayPwIEuIxpGzhle1GUK_k/view">PDF</a> for details):</h2>
-            <p style="margin-left: 21%; font-size: 20px;">
-              The Rise of Nationalism in Europe - History<br />
-              Power Sharing; Federalism - Politics<br />
-              Development; Sectors of the Indian Economy- Economics<br />
-              Resources and Development; Water Resources; Agriculture - Geography<br>
-              Refer to the PDF for map works. <br><br>
-            </p>
-            <h2 style="margin-left: 5%; font-size: 35px;">Mathematics (First Term) (Deleted Portions were told in class):</h2>
-            <p style="margin-left: 21%; font-size: 20px;">
-              Real Numbers<br />
-              Polynomials<br />
-              Pair of Linear Equations in Two Variables<br />
-              Coordinate Geometry<br />
-              Triangles<br />
-              Introduction to Trignometry<br />
-              Areas Related to Circles<br />
-              Probability<br /><br>
-            </p>
-            <h2 style="margin-left: 5%; font-size: 35px;">Computers (First Term):</h2>
-            <p style="margin-left: 21%; font-size: 20px;">
-              Employibility Skills: ICT<br />
-              Employibility Skills: Communication<br />
-              Employibility Skills: Stress Skills<br />
-              Digital Documentation<br />
-              Electronic Spreadsheet<br /><br>
-            </p></b
-          ><br />
-          <h2 style="margin-left: 5%; font-size: 35px;">Hindi (First Term)</h2>
-            <p style="margin-left: 21%; font-size: 20px;">
-              Chapter based: Kabir Saakhi, Meera ke Pad<br />
-              Chapter based: Tantara Vaamiron Katha, Bade Bhai Sahab, Ab Kahan Doorse ke Dukh se Dukhi Hone Vale<br />
-              Grammar: Pad Bandh, Ranchna Ke Adhaar pe Vakya, Samaas, Muhavre<br />
-              Apathit Gadhyansh<br />
-             <br>
-            </p><br /><br/>
+    /* Button */
+    .btnd {
+      text-align: center;
+      height: 100px;
+      vertical-align: middle;
+      background-color: #B4DBB0;
+      margin-top: 10%;
+    }
 
-        </div>
-      </div>
-      <br /><br />
+    .btn {
+      background-color: #9CCCB7;
+      padding: 0px;
+      vertical-align: middle;
+      border-top-width: 0px;
+      border-right-width: 0px;
+      border-left-width: 0px;
+      border-bottom-width: 2px;
+      border-radius: 0px;
+      text-align: center;
+      border-color: black;
+      height: 35px;
+      width: 125px;
+      font-family: 'Noto Sans', sans-serif;
+      margin-top: 4vh;
+      font-size: 1rem;
+      padding: 0.6rem;
+    }
 
-      <script src="./js/errors.js"></script>
+    .btn:hover {
+      background-color: #b1ccc0;
+      color: black;
+    }
+  </style>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&family=Poppins:wght@300&display=swap"
+    rel="stylesheet">
+  <title>Syllabus</title>
+</head>
+
+<body>
+  <!-- Within the image section -->
+  <div class="img">
+    <img src="./assets/Syllabus.svg" class="logo">
+    <nav>
+      <span class="nav">
+        <a href="./home.html" class="navl">HOME</a>
+        <a href="./Syllabus.html" class="navl">SYLLABUS</a>
+        <a href="#" class="navl">GRADE 9</a>
+        <a href="#" class="navl">GRADE 10</a>
+        <a href="#" class="navl">OTHERS</a>
+      </span>
+    </nav>
+    <div class="syllabus">
+      Syllabus
     </div>
+  </div>
+  <!-- Below the image section -->
+  <div class="text">
+    <h2>
+      The syllabus for all the upcoming exams for 10th grade:
+    </h2>
+    <ul>
+      <li>
+        <h3>English:</h3>
+        <ol>
+          <li>
+            Adventures of India
+          </li>
+          <li>
+            Gap Filling
+          </li>
+          <li>
+            Reported Speech
+          </li>
+          <li>
+            Amanda
+          </li>
+          <li>
+            The Making of Scientist
+          </li>
+          <li>
+            Letter of Placing Order
+          </li>
+          <li>
+            Letter of Enquiry
+          </li>
+        </ol>
+      </li>
+      <li>
+        <h3>Science:</h3>
+        <ol>
+          <li>
+            Carbon and its Compounds
+          </li>
+          <li>
+            How do Organisms Reproduce?
+          </li>
+          <li>
+            Electricity
+          </li>
+        </ol>
+      </li>
+      <li>
+        <h3>Mathematics:</h3>
+      </li>
+      <ol>
+        <li>
+          Quadratic Equations
+        </li>
+        <li>
+          Arithemetic Progression
+        </li>
+      </ol>
+    </ul>
+  </div>
+  <div class="btnd"> <button onclick="reload()" class="btn">Back to Top</button></div>
+  <script>
+    function reload() {
+      window.location.href = "./Syllabus.html"
+    }
+  </script>
+</body>
 
-    <div id="wrapper">
-      <div id="container">
-        
-      </div>
-      <br /><br />
-
-        <div class="gg">
-          <br /><br />
-          <b
-            ><h1 style="font-size: 40px;"align="center">Upcoming Exam: Computers</h1>
-            <br />
-            <h2 style="margin-left: 5%; font-size: 35px;">Social Studies (First Term) (Refer to <a href="https://drive.google.com/file/d/1YLHaf4LYqmLayPwIEuIxpGzhle1GUK_k/view">PDF</a> for details):</h2>
-            <p style="margin-left: 21%; font-size: 20px;">
-              The Rise of Nationalism in Europe - History<br />
-              Power Sharing; Federalism - Politics<br />
-              Development; Sectors of the Indian Economy- Economics<br />
-              Resources and Development; Water Resources; Agriculture - Geography<br>
-              Refer to the PDF for map works. <br><br>
-            </p>
-            <h2 style="margin-left: 5%; font-size: 35px;">Mathematics (First Term) (Deleted Portions were told in class):</h2>
-            <p style="margin-left: 21%; font-size: 20px;">
-              Real Numbers<br />
-              Polynomials<br />
-              Pair of Linear Equations in Two Variables<br />
-              Coordinate Geometry<br />
-              Triangles<br />
-              Introduction to Trignometry<br />
-              Areas Related to Circles<br />
-              Probability<br /><br>
-            </p>
-            <h2 style="margin-left: 5%; font-size: 35px;">Computers (First Term):</h2>
-            <p style="margin-left: 21%; font-size: 20px;">
-              Employibility Skills: ICT<br />
-              Employibility Skills: Communication<br />
-              Employibility Skills: Stress Skills<br />
-              Digital Documentation<br />
-              Electronic Spreadsheet<br /><br>
-            </p>
-            <h2 style="margin-left: 5%; font-size: 35px;">Hindi (First Term)</h2>
-            <p style="margin-left: 21%; font-size: 20px;">
-              Chapter based: Kabir Saakhi, Meera ke Pad<br />
-              Chapter based: Tantara Vaamiron Katha, Bade Bhai Sahab, Ab Kahan Doorse ke Dukh se Dukhi Hone Vale<br />
-              Grammar: Pad Bandh, Ranchna Ke Adhaar pe Vakya, Samaas, Muhavre<br />
-              Apathit Gadhyansh<br />
-             <br>
-            </p>
-          </b>
-        </div>
-      </div>
-      <br /><br />
-
-      <script src="./js/errors.js"></script>
-  </body>
 </html>
