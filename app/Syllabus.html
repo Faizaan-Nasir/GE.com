@@ -3,142 +3,14 @@
 
 <head>
   <style>
-    @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&display=swap');
-
-    /* (for faizaan )this, if you didnt realise already, is the CSS code for scrollbars, quite evidently understood by the scrollbar written in the name */
-    *::-webkit-scrollbar {
-      display: block;
-      width: 16px;
-    }
-
-    *::-webkit-scrollbar-button {
-      display: none;
-    }
-
-    *::-webkit-scrollbar-track {
-      background-color: #00000000;
-    }
-
-    *::-webkit-scrollbar-track-piece {
-      background-color: #00000000;
-    }
-
-    *::-webkit-scrollbar-thumb {
-      background-color: #00000000;
-      border: 5px solid transparent;
-      border-radius: 24px;
-      box-shadow: 4px 0px 0px 4px #00000040 inset;
-    }
-
-    *::-webkit-scrollbar-thumb:hover {
-      background-color: #00000040;
-      border: 0px solid transparent;
-      box-shadow: none;
-    }
-
-    /* this dear faizaan is where the code for the scrollbar ends. thank you (tiny bow, exit stage, curtains close) */
-    /* Basic Body */
-    body {
-      overflow: overlay;
-      margin: 0%;
-      background-color: #E4E4E4;
-    }
-
-
     /* Main Image */
     .img {
       height: 800px;
       background: url("./assets/Syllabus.png") center top no-repeat;
       background-size: cover;
     }
-
-    /* Text: "Syllabus" */
-    .syllabus {
-      font-family: Bookman Old Style;
-      font-style: normal;
-      font-weight: 600;
-      font-size: 110px;
-      line-height: 188px;
-      align-items: center;
-      color: #272727;
-      margin-left: 5%;
-      margin-top: 12%;
-    }
-
-    /* Logo Image Placement */
-    .logo {
-      margin-top: 15px;
-      margin-left: 15px;
-      height: 14%;
-    }
-
-    /* Navbar */
-    nav {
-      font-family: 'Noto Sans', sans-serif;
-      color: white;
-      font-size: 22px;
-      margin-top: -7%;
-    }
-
-    .nav {
-      width: 100px;
-      margin-left: 36%;
-    }
-
-    a {
-      text-decoration: none;
-      color: white;
-    }
-
-    a:hover {
-      color: whitesmoke;
-    }
-
-    .navl {
-      margin-left: 5%;
-    }
-
-    /* Main Text */
-    .text {
-      font-family: 'Poppins', sans-serif;
-      margin-top: 0%;
-      margin-left: 10%;
-      margin-top: 10%;
-    }
-
-    /* Button */
-    .btnd {
-      text-align: center;
-      height: 100px;
-      vertical-align: middle;
-      background-color: #B4DBB0;
-      margin-top: 10%;
-    }
-
-    .btn {
-      background-color: #9CCCB7;
-      padding: 0px;
-      vertical-align: middle;
-      border-top-width: 0px;
-      border-right-width: 0px;
-      border-left-width: 0px;
-      border-bottom-width: 2px;
-      border-radius: 0px;
-      text-align: center;
-      border-color: black;
-      height: 35px;
-      width: 125px;
-      font-family: 'Noto Sans', sans-serif;
-      margin-top: 4vh;
-      font-size: 1rem;
-      padding: 0.6rem;
-    }
-
-    .btn:hover {
-      background-color: #b1ccc0;
-      color: black;
-    }
   </style>
+  <link rel="stylesheet" href="./css/brains.css">
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -223,7 +95,7 @@
       </ol>
     </ul>
   </div>
-  <div class="btnd"> <button onclick="reload()" class="btn">Back to Top</button></div>
+  <div class="btnd"> <button onclick="reload()" class="btn">BACK TO TOP</button></div>
   <script>
     function reload() {
       window.location.href = "./Syllabus.html"
